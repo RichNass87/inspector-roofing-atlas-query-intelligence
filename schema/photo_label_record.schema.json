@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://inspector-roofing.com/schema/photo-label-record.schema.json",
+  "title": "Inspector Roofing Public Roof-Photo Label Record",
+  "description": "Schema for privacy-safe public roof-photo label records or aggregate examples.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "label_name",
+    "plain_english_label",
+    "safe_public_use",
+    "privacy_level",
+    "not_a_claim_determination"
+  ],
+  "properties": {
+    "label_name": {
+      "type": "string",
+      "enum": [
+        "hail_hit",
+        "wind_crease",
+        "soft_metal_impact",
+        "missing_shingle",
+        "granule_loss",
+        "mechanical_damage",
+        "non_damage_lookalike"
+      ]
+    },
+    "plain_english_label": {
+      "type": "string"
+    },
+    "safe_public_use": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "service_intent": {
+      "type": "string"
+    },
+    "privacy_level": {
+      "type": "string",
+      "enum": ["aggregate_only", "public_safe_sanitized", "private_do_not_publish"]
+    },
+    "not_a_claim_determination": {
+      "type": "boolean",
+      "const": true
+    }
+  }
+}

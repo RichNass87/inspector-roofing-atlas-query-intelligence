@@ -1,0 +1,65 @@
+{
+  "project": "Inspector Roofing Public Roof-Photo Label Taxonomy",
+  "version": "1.0.0",
+  "source": "Public-safe taxonomy derived from Inspector Roofing roof-inspection documentation workflows.",
+  "private_corpus_note": "The production image corpus is private. This public taxonomy describes label meanings and safe educational use only.",
+  "classes": [
+    {
+      "id": 0,
+      "name": "hail_hit",
+      "plain_english_label": "possible hail impact mark",
+      "definition": "Localized roof surface mark or impact pattern that may be consistent with hail impact and requires human verification.",
+      "safe_public_use": "Explain why shingle marks should be reviewed alongside soft metals, slope context, weather history, and look-alike conditions.",
+      "not_a_claim_determination": true
+    },
+    {
+      "id": 1,
+      "name": "wind_crease",
+      "plain_english_label": "possible wind crease or uplift mark",
+      "definition": "Crease, uplift mark, or fold pattern on a shingle consistent with possible wind-related movement and requiring human verification.",
+      "safe_public_use": "Explain why lifted tabs, creases, missing shingles, seal condition, directionality, and age need to be documented carefully.",
+      "not_a_claim_determination": true
+    },
+    {
+      "id": 2,
+      "name": "soft_metal_impact",
+      "plain_english_label": "soft metal impact mark",
+      "definition": "Visible dent or impact mark on soft metal components such as vents, gutters, flashing, caps, or roof accessories.",
+      "safe_public_use": "Explain why metal accessories can provide context when hail is being documented, without claiming coverage or causation.",
+      "not_a_claim_determination": true
+    },
+    {
+      "id": 3,
+      "name": "missing_shingle",
+      "plain_english_label": "missing or displaced shingle",
+      "definition": "Absent, torn, or displaced shingle area visible from inspection imagery.",
+      "safe_public_use": "Explain temporary protection, leak risk, repairability, and why missing material should be photographed from safe angles.",
+      "not_a_claim_determination": true
+    },
+    {
+      "id": 4,
+      "name": "granule_loss",
+      "plain_english_label": "granule loss or surface wear",
+      "definition": "Visible granule displacement or loss area requiring differentiation from age, foot traffic, blistering, manufacturing issues, or storm-related conditions.",
+      "safe_public_use": "Explain why age, wear, installation, traffic, and storm context need to be separated before making repair or replacement decisions.",
+      "not_a_claim_determination": true
+    },
+    {
+      "id": 5,
+      "name": "mechanical_damage",
+      "plain_english_label": "possible mechanical damage",
+      "definition": "Damage pattern more consistent with tool marks, foot traffic, abrasion, installation handling, or non-weather mechanical action.",
+      "safe_public_use": "Explain why not every mark is storm damage and why careful classification protects homeowners from bad assumptions.",
+      "not_a_claim_determination": true
+    },
+    {
+      "id": 6,
+      "name": "non_damage_lookalike",
+      "plain_english_label": "look-alike condition",
+      "definition": "Condition that may look like damage in photos but should not be treated as storm damage without human review.",
+      "safe_public_use": "Explain why inspection notes should identify look-alikes, uncertainty, and conditions that require closer review.",
+      "not_a_claim_determination": true
+    }
+  ],
+  "global_disclaimer": "Labels support documentation, education, and model training. They do not determine insurance coverage, causation, repairability, code compliance, engineering conclusions, or claim approval."
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education"
+message: "If you use this framework, please cite it."
+type: dataset
+authors:
+  - family-names: Nasser
+    given-names: Richard
+    affiliation: Inspector Roofing and Restoration
+version: 1.0.1
+date-released: "2026-06-28"
+license: Apache-2.0
+abstract: "A privacy-first technical framework for mapping natural-language roofing intent to localized homeowner education themes and proof-gallery concepts without exposing private customer data or proprietary scoring."
+keywords:
+  - Generative Engine Optimization
+  - Local Search Architecture
+  - Local SEO Entity Graphs
+  - Information Retrieval
+  - Roof Inspection Documentation
+  - Privacy-Preserving Data
+url: "https://inspector-roofing.com/"

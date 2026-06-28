@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://inspector-roofing.com/schema/query-intelligence-record.schema.json",
+  "title": "Inspector Roofing Atlas Query Intelligence Record",
+  "description": "Public-safe schema for sanitized local roofing AI-query observations.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "user_prompt",
+    "ai_observed_query",
+    "city",
+    "state",
+    "service_intent",
+    "semantic_theme",
+    "homeowner_question_type",
+    "proof_concept",
+    "structural_h2_template",
+    "suggested_faq",
+    "safe_anchor_text",
+    "canonical_authority_hub",
+    "privacy_level"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^ir-aqi-[0-9]{4}$"
+    },
+    "user_prompt": {
+      "type": "string",
+      "minLength": 5
+    },
+    "ai_observed_query": {
+      "type": "string",
+      "minLength": 5
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 2
+    },
+    "service_intent": {
+      "type": "string"
+    },
+    "semantic_theme": {
+      "type": "string"
+    },
+    "homeowner_question_type": {
+      "type": "string"
+    },
+    "proof_concept": {
+      "type": "string"
+    },
+    "photo_label_bridge": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "hail_hit",
+          "wind_crease",
+          "soft_metal_impact",
+          "missing_shingle",
+          "granule_loss",
+          "mechanical_damage",
+          "non_damage_lookalike"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "structural_h2_template": {
+      "type": "string"
+    },
+    "suggested_faq": {
+      "type": "string"
+    },
+    "safe_anchor_text": {
+      "type": "string"
+    },
+    "canonical_authority_hub": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://inspector-roofing\\.com/"
+    },
+    "privacy_level": {
+      "type": "string",
+      "enum": ["public_safe_sanitized"]
+    }
+  }
+}

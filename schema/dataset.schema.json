@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://inspector-roofing.com/schema/atlas-query-intelligence-dataset.schema.json",
+  "title": "Inspector Roofing Atlas Query Intelligence Dataset",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "$ref": "./query_intelligence_record.schema.json"
+  }
+}

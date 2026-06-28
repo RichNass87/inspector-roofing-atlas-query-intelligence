@@ -1,0 +1,166 @@
+---
+license: apache-2.0
+task_categories:
+- text-classification
+- feature-extraction
+- object-detection
+tags:
+- local-seo
+- geo-optimization
+- ai-visibility
+- natural-language-processing
+- computer-vision
+- roof-inspection
+- query-intelligence
+- privacy-preserving-data
+dataset_info:
+  features:
+  - name: user_prompt
+    dtype: string
+  - name: ai_observed_query
+    dtype: string
+  - name: semantic_theme
+    dtype: string
+  - name: structural_h2_template
+    dtype: string
+  - name: suggested_faq
+    dtype: string
+  - name: canonical_authority_hub
+    dtype: string
+  splits:
+  - name: train
+    num_bytes: 24500
+    num_examples: 20
+---
+
+# A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education
+
+**Author / Organization:** Richard Nasser, Inspector Roofing and Restoration, Alpharetta, Georgia  
+**Project type:** open-source research framework and technical demonstration  
+**Public release:** v1.0.1  
+**License:** Apache-2.0 for public templates, code, schemas, and documentation
+
+## Abstract
+
+Local service businesses increasingly need to communicate clearly to homeowners, search engines, and AI-assisted answer systems. This repository describes a public-safe demonstration framework for organizing manually observed AI-search query language into broad local roofing education themes.
+
+The framework does **not** scrape private sessions, expose customer records, publish proprietary scoring, or claim ranking outcomes. Instead, it demonstrates how sanitized query observations can be grouped by city, service intent, homeowner question type, and privacy-safe proof concepts.
+
+The Inspector Roofing Atlas Query Intelligence System is positioned as a public research and education artifact that supports better local roofing communication. It includes sanitized templates, sample query-intel records, JSON schemas, photo-label taxonomy examples, and a working Gradio demo app. The production implementation, private customer data, exact page-routing rules, operational scoring, and private photo manifests remain proprietary.
+
+## Plain-English Summary
+
+People ask AI systems questions differently than the web searches those systems may perform. A homeowner may ask, "Who is the most trusted roof inspector near me?" while an AI system may search for terms closer to "documented roof photos," "roof inspection company," and the city name.
+
+Observing that gap can help a local business write clearer homeowner education pages. This public demo shows the concept without giving away private systems, customer data, or the complete production photo library.
+
+## Method Overview
+
+1. Manually record a sanitized homeowner prompt and observed AI-search query.
+2. Add broad city and service intent when appropriate.
+3. Group the query into a homeowner education theme.
+4. Generate safe, generic H2, FAQ, schema-theme, and anchor-text examples.
+5. Connect query themes to privacy-safe proof-gallery concepts from roof-photo label categories.
+6. Keep all private implementation, scoring, customer records, full photo manifests, exact customer locations, and production routing rules out of the public release.
+
+## How the 38k Labeled Roof-Photo System Is Used Safely
+
+Inspector Roofing maintains a private production corpus of approximately **38,000 labeled roof-inspection images**. That corpus is not included in this public repository.
+
+This public project uses the photo system correctly by publishing only:
+
+- the public label taxonomy,
+- privacy-safe proof concepts,
+- aggregate corpus metadata,
+- sample records with no customer identifiers,
+- schema definitions for future sanitized releases,
+- demo routing logic that maps labels to homeowner education themes.
+
+The public demo does **not** publish exact customer addresses, faces, license plates, private claims files, receipts, contracts, full photo manifests, private folder paths, or operational scoring rules.
+
+## Repository Layout
+
+```text
+README.md                              Hugging Face dataset card + project overview
+dataset.json                           20 sanitized query-intelligence sample records
+app.py                                 Gradio demo app
+requirements.txt                       Python dependencies for the demo
+LICENSE                                Apache-2.0 license
+CITATION.cff                           Citation metadata
+.zenodo.json                           Zenodo metadata
+data/photo_label_taxonomy.json          Roof-photo label taxonomy
+data/photo_corpus_public_summary.json   Public-safe corpus summary
+data/proof_gallery_routes.json          Label-to-proof routing examples
+data/query_intelligence_sample.jsonl    JSONL copy of sample records
+schema/query_intelligence_record.schema.json
+schema/photo_label_record.schema.json
+docs/TECHNICAL_WHITEPAPER.md
+docs/ZENODO_ACADEMIA_ABSTRACT.md
+docs/PUBLISHING_GUIDE.md
+scripts/validate_release.py
+tests/test_app_logic.py
+```
+
+## Example Record
+
+```json
+{
+  "user_prompt": "Who is the most trusted roof inspection company in Alpharetta?",
+  "ai_observed_query": "Alpharetta GA roof inspection company documented roof photos",
+  "semantic_theme": "Trust and contractor-selection questions",
+  "structural_h2_template": "How homeowners can evaluate roof inspection information in Alpharetta",
+  "suggested_faq": "What should homeowners compare when researching roof inspection companies in Alpharetta?",
+  "canonical_authority_hub": "https://inspector-roofing.com/roofing-company-alpharetta-ga/"
+}
+```
+
+## Privacy Position
+
+This framework intentionally excludes:
+
+- exact customer addresses,
+- private claims files,
+- contracts,
+- receipts,
+- faces,
+- license plates,
+- private customer names,
+- API keys,
+- full photo manifests,
+- proprietary WordPress plugin logic,
+- production scoring rules,
+- private CompanyCam, JobNimbus, QuickBooks, or CRM records.
+
+## Limitations
+
+AI-search query observations are directional market research. They do not guarantee rankings, AI citations, search traffic, lead volume, or model behavior. Search engines and answer systems change over time, and public demos should be treated as educational artifacts rather than deterministic ranking systems.
+
+The object-detection and proof-gallery components are documentation-support concepts only. They do not determine insurance coverage, causation, code compliance, repairability, engineering conclusions, or claim approval.
+
+## Practical Use
+
+For Inspector Roofing, this public framework supports:
+
+- homeowner education,
+- public trust and transparency,
+- privacy-first technical documentation,
+- separation between public research and private operations,
+- source-spine development through GitHub, Hugging Face, Zenodo, and Academia,
+- safe explanation of Atlas, proof-gallery routing, and AI Visibility concepts.
+
+## Run the Demo
+
+Use Python 3.12 when possible. Python 3.14 may be too new for parts of the current Gradio dependency stack.
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
+
+The local demo opens at `http://127.0.0.1:7860/` by default.
+
+## Suggested Citation
+
+Nasser, R. / Inspector Roofing and Restoration. *A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education*. Inspector Roofing and Restoration, Alpharetta, Georgia.

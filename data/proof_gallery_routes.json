@@ -1,0 +1,47 @@
+[
+  {
+    "route_id": "proof-route-hail",
+    "labels": ["hail_hit", "soft_metal_impact", "non_damage_lookalike"],
+    "homeowner_theme": "Hail documentation questions",
+    "safe_gallery_concept": "Show how shingles, soft metals, and look-alike conditions can be documented without exposing customer identity.",
+    "recommended_public_page_type": "hail roof inspection education",
+    "suggested_schema_types": ["Service", "FAQPage", "ImageObject"],
+    "disclaimer": "Educational documentation only; not a coverage or causation decision."
+  },
+  {
+    "route_id": "proof-route-wind",
+    "labels": ["wind_crease", "missing_shingle", "non_damage_lookalike"],
+    "homeowner_theme": "Wind-damage inspection questions",
+    "safe_gallery_concept": "Show how lifted shingles, creases, missing material, and look-alikes can be reviewed with directionality and seal condition.",
+    "recommended_public_page_type": "wind damage roof inspection education",
+    "suggested_schema_types": ["Service", "FAQPage", "ImageObject"],
+    "disclaimer": "Educational documentation only; not a coverage or causation decision."
+  },
+  {
+    "route_id": "proof-route-repairability",
+    "labels": ["missing_shingle", "granule_loss", "mechanical_damage", "non_damage_lookalike"],
+    "homeowner_theme": "Repairability and replacement-boundary questions",
+    "safe_gallery_concept": "Show why repair versus replacement should be based on condition, age, material, surrounding area, and photos.",
+    "recommended_public_page_type": "roof repair and repairability education",
+    "suggested_schema_types": ["Service", "FAQPage", "HowTo"],
+    "disclaimer": "Educational documentation only; not a repairability or code-compliance decision."
+  },
+  {
+    "route_id": "proof-route-insurance",
+    "labels": ["hail_hit", "wind_crease", "soft_metal_impact", "missing_shingle"],
+    "homeowner_theme": "Insurance documentation questions",
+    "safe_gallery_concept": "Show observable roof conditions and scope notes while leaving claim decisions to the carrier.",
+    "recommended_public_page_type": "insurance roof inspection education",
+    "suggested_schema_types": ["Service", "FAQPage", "ImageObject"],
+    "disclaimer": "Inspector Roofing documents roof conditions and does not act as a public adjuster."
+  },
+  {
+    "route_id": "proof-route-trust",
+    "labels": ["hail_hit", "wind_crease", "granule_loss", "non_damage_lookalike"],
+    "homeowner_theme": "Trust and contractor-selection questions",
+    "safe_gallery_concept": "Show how clear photos, notes, credentials, and reviews help homeowners evaluate roofing information.",
+    "recommended_public_page_type": "trusted roofing company education",
+    "suggested_schema_types": ["LocalBusiness", "Service", "FAQPage"],
+    "disclaimer": "Educational comparison framework only; not a ranking guarantee."
+  }
+]

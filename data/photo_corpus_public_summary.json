@@ -1,0 +1,55 @@
+{
+  "project": "Inspector Roofing Atlas Public Photo Corpus Summary",
+  "version": "1.0.0",
+  "private_production_corpus": {
+    "approximate_labeled_image_count": 38000,
+    "status": "private production corpus, not included in this public repository",
+    "reason_private": [
+      "customer privacy",
+      "exact property location privacy",
+      "faces and license plate avoidance",
+      "claim-file and contract separation",
+      "proprietary operational workflow protection"
+    ]
+  },
+  "public_release": {
+    "raw_customer_images_included": 0,
+    "full_photo_manifest_included": false,
+    "public_sample_strategy": "publish taxonomy, schemas, aggregate proof concepts, and sanitized example records only",
+    "safe_for_github_huggingface_zenodo": true
+  },
+  "label_classes": [
+    "hail_hit",
+    "wind_crease",
+    "soft_metal_impact",
+    "missing_shingle",
+    "granule_loss",
+    "mechanical_damage",
+    "non_damage_lookalike"
+  ],
+  "documentation_boundary": {
+    "allowed_public_outputs": [
+      "city-level education themes",
+      "service-level education themes",
+      "label definitions",
+      "aggregate counts",
+      "privacy-safe proof concepts",
+      "sample query-intelligence records",
+      "schema templates"
+    ],
+    "excluded_public_outputs": [
+      "exact customer addresses",
+      "private customer names",
+      "claim numbers",
+      "contracts",
+      "receipts",
+      "faces",
+      "license plates",
+      "full image manifests",
+      "private cloud storage paths",
+      "private WordPress plugin logic",
+      "production scoring rules"
+    ]
+  },
+  "disclaimer": "The private photo corpus supports documentation and education workflows. It does not determine insurance coverage, causation, code compliance, repairability, or claim approval."
+}

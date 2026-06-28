@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.venv312/
+venv/
+dist/
+build/
+output/
+tmp/
+*.zip
+models/
+private-data/
+customer-data/
+photo-manifests/
+*.env
+.env
