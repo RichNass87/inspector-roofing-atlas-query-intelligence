@@ -1,5 +1,6 @@
 platform,role,status,url,notes
 Inspector Roofing,Primary website,live,https://inspector-roofing.com/,Primary business and public entity website
+ORCID,Researcher identifier,live,https://orcid.org/0009-0000-2980-7543,Richard Nasser ORCID profile for project work entries
 Amazon Author,Author profile,live,https://www.amazon.com/author/richard-nasser,Richard Nasser author profile
 Amazon Book,Related book reference,live,https://www.amazon.com/dp/B0H63DV2LR,Related source-spine book reference already used in public Inspector Roofing dataset context
 GitHub,Source repository,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence,Public source repository

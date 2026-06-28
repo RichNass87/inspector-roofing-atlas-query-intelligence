@@ -23,5 +23,10 @@ The private production system and private customer data are intentionally exclud
 ## Primary Links
 
 - Inspector Roofing: https://inspector-roofing.com/
+- ORCID: https://orcid.org/0009-0000-2980-7543
+- GitHub: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
+- GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1
+- Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
+- Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Amazon Author: https://www.amazon.com/author/richard-nasser
 - Related Amazon book reference: https://www.amazon.com/dp/B0H63DV2LR

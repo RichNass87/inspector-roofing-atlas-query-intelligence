@@ -46,7 +46,7 @@ SECTIONS = [
     ),
     (
         "Practical Use",
-        "For Inspector Roofing, this framework supports homeowner education, public trust and transparency, privacy-first technical documentation, and separation between public research and private operations. It also supports a source-spine across GitHub, Hugging Face, Zenodo, OSF, Kaggle, Academia.edu, and the primary Inspector Roofing website.",
+        "For Inspector Roofing, this framework supports homeowner education, public trust and transparency, privacy-first technical documentation, and separation between public research and private operations. It also supports a source-spine across GitHub, Hugging Face, Zenodo, OSF, Kaggle, ORCID, Academia.edu, Amazon, and the primary Inspector Roofing website.",
     ),
     (
         "Limitations",
@@ -192,6 +192,8 @@ def build_story():
 
     story.append(Paragraph("Primary Website", styles["Section"]))
     story.append(Paragraph("https://inspector-roofing.com/", styles["BodyClean"]))
+    story.append(Paragraph("ORCID", styles["Section"]))
+    story.append(Paragraph("https://orcid.org/0009-0000-2980-7543", styles["BodyClean"]))
     return story
 
 

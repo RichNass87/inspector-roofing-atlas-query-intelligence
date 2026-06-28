@@ -52,4 +52,4 @@ Photo labels support documentation, education, and model training. They do not d
 
 ## Practical Use
 
-For Inspector Roofing, this framework supports homeowner education, public trust and transparency, privacy-first technical documentation, source-spine development, and separation between public research and private operating systems.
+For Inspector Roofing, this framework supports homeowner education, public trust and transparency, privacy-first technical documentation, source-spine development across GitHub, Hugging Face, Zenodo, OSF, Kaggle, ORCID, Academia, Amazon, and Inspector Roofing, and separation between public research and private operating systems.

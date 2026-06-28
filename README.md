@@ -92,12 +92,20 @@ data/photo_label_taxonomy.json          Roof-photo label taxonomy
 data/photo_corpus_public_summary.json   Public-safe corpus summary
 data/proof_gallery_routes.json          Label-to-proof routing examples
 data/query_intelligence_sample.jsonl    JSONL copy of sample records
+data/platform_links.csv                 Public source-spine platform links
+data/orcid_works.bib                    ORCID BibTeX import for current works
+data/orcid_works.json                   ORCID structured work list
+data/public_project_inventory.csv       Project-wide GitHub/ORCID/Kaggle/OSF inventory
 schema/query_intelligence_record.schema.json
 schema/photo_label_record.schema.json
 docs/TECHNICAL_WHITEPAPER.md
 docs/ZENODO_ACADEMIA_ABSTRACT.md
 docs/PUBLISHING_GUIDE.md
+docs/ORCID_UPDATE_NOTES.md
+docs/ALL_PROJECTS_PLATFORM_ROLLOUT.md
 scripts/validate_release.py
+scripts/kaggle_publish.sh
+scripts/osf_publish.sh
 tests/test_app_logic.py
 ```
 
@@ -145,16 +153,17 @@ For Inspector Roofing, this public framework supports:
 - public trust and transparency,
 - privacy-first technical documentation,
 - separation between public research and private operations,
-- source-spine development through GitHub, Hugging Face, Zenodo, and Academia,
+- source-spine development through GitHub, Hugging Face, Zenodo, OSF, Kaggle, ORCID, and Academia,
 - safe explanation of Atlas, proof-gallery routing, and AI Visibility concepts.
 
 ## Related Public Links
 
 - Inspector Roofing: https://inspector-roofing.com/
+- Richard Nasser ORCID: https://orcid.org/0009-0000-2980-7543
 - Richard Nasser Amazon author profile: https://www.amazon.com/author/richard-nasser
 - Related Amazon book reference: https://www.amazon.com/dp/B0H63DV2LR
 
-Repository, Hugging Face, DOI, OSF, Kaggle, and Academia links should be added to `data/platform_links.csv` and `docs/PUBLICATION_LINK_MAP.md` after each platform is live.
+Repository, Hugging Face, DOI, OSF, Kaggle, ORCID, and Academia links should be added to `data/platform_links.csv` and `docs/PUBLICATION_LINK_MAP.md` after each platform is live.
 
 - GitHub repository: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
 - GitHub v1.0.1 release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1

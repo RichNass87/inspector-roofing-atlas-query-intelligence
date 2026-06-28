@@ -6,6 +6,7 @@ authors:
   - family-names: Nasser
     given-names: Richard
     affiliation: Inspector Roofing and Restoration
+    orcid: "https://orcid.org/0009-0000-2980-7543"
 version: 1.0.1
 date-released: "2026-06-28"
 license: Apache-2.0
@@ -17,4 +18,4 @@ keywords:
   - Information Retrieval
   - Roof Inspection Documentation
   - Privacy-Preserving Data
-url: "https://inspector-roofing.com/"
+url: "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence"

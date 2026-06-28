@@ -18,6 +18,7 @@ Use this file as the source-spine checklist after each platform is published.
 | GitHub Release | Versioned v1.0.1 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1 |
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Live | https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence |
 | Hugging Face Space | Gradio public demo | Live | https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo |
+| ORCID | Richard Nasser researcher identifier and works list | Ready for work import | https://orcid.org/0009-0000-2980-7543 |
 | Zenodo | DOI for technical report / release archive | Pending DOI |  |
 | OSF | Research project mirror and citation context | Pending publish |  |
 | Kaggle | Optional dataset mirror | Pending publish |  |
@@ -25,12 +26,15 @@ Use this file as the source-spine checklist after each platform is published.
 | Amazon Author | Richard Nasser author profile | Live public reference | https://www.amazon.com/author/richard-nasser |
 | Amazon Book | Related source-spine book reference | Live public reference | https://www.amazon.com/dp/B0H63DV2LR |
 
+Project-wide cleanup inventory: `data/public_project_inventory.csv`.
+
 ## Link Rules
 
 - GitHub should link to Hugging Face Dataset, Hugging Face Space, Zenodo DOI, Inspector Roofing, and Amazon only after those URLs are live.
 - Hugging Face Dataset should link back to GitHub, Zenodo DOI, and Inspector Roofing.
 - Hugging Face Space should link to the Dataset and GitHub.
 - Zenodo should cite the GitHub release archive and include the technical-report PDF.
+- ORCID should list the technical report, public-safe dataset, demo app, and source repository using `data/orcid_works.bib`.
 - Academia.edu should upload the PDF and link to the DOI once Zenodo is live.
 - Kaggle and OSF should mirror the same public-safe files only.
 - Amazon should use the author profile plus final book/product URLs only. Do not use a search URL as the canonical Amazon reference.

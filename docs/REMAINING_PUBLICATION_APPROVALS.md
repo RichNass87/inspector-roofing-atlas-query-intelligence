@@ -8,6 +8,7 @@ GitHub and Hugging Face are live. The remaining platforms require either API tok
 - GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
+- ORCID: https://orcid.org/0009-0000-2980-7543
 - Inspector Roofing: https://inspector-roofing.com/
 - Amazon Author: https://www.amazon.com/author/richard-nasser
 - Amazon Book: https://www.amazon.com/dp/B0H63DV2LR
@@ -50,6 +51,13 @@ cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1
 bash scripts/kaggle_publish.sh
 ```
 
+If the dataset already exists, this script now versions it automatically. To force a mode:
+
+```bash
+KAGGLE_MODE=version bash scripts/kaggle_publish.sh
+KAGGLE_MODE=create bash scripts/kaggle_publish.sh
+```
+
 ## OSF
 
 Manual path:
@@ -59,6 +67,24 @@ Manual path:
 3. Use `docs/OSF_PROJECT_DESCRIPTION.md`.
 4. Upload the release zip and PDF.
 5. Link to GitHub, Hugging Face Dataset, Hugging Face Space, Amazon Author, and Inspector Roofing.
+
+CLI path after project creation:
+
+```bash
+cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1
+OSF_PROJECT_ID="paste-project-id" bash scripts/osf_publish.sh
+```
+
+## ORCID
+
+Manual path:
+
+1. Open https://orcid.org/0009-0000-2980-7543
+2. Go to Works.
+3. Import BibTeX from `data/orcid_works.bib`.
+4. Confirm the technical report, Hugging Face dataset, Hugging Face Space demo, and GitHub source repository.
+
+API path requires an ORCID OAuth token with activity/work update permission. Do not use or share a password.
 
 ## Academia.edu
 
