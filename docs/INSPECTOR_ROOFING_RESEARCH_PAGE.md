@@ -47,13 +47,14 @@ This page should be the public website anchor for the Atlas Query Intelligence s
     <li><a href="https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1">GitHub v1.0.1 release archive and technical PDF</a></li>
     <li><a href="https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence">Hugging Face public-safe dataset</a></li>
     <li><a href="https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo">Hugging Face Gradio demo app</a></li>
+    <li><a href="https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence">Kaggle public-safe dataset mirror</a></li>
     <li><a href="https://orcid.org/0009-0000-2980-7543">Richard Nasser ORCID profile</a></li>
     <li><a href="https://www.amazon.com/author/richard-nasser">Richard Nasser Amazon author profile</a></li>
     <li><a href="https://www.amazon.com/dp/B0H63DV2LR">Related Amazon book reference</a></li>
   </ul>
 
   <h2>Additional Research Mirrors</h2>
-  <p>Zenodo, Kaggle, OSF, and Academia.edu mirrors should be added here as each final public record goes live. These mirrors should carry the same public-safe files and should point back to this page, the GitHub release, and the Hugging Face dataset.</p>
+  <p>Zenodo, OSF, and Academia.edu mirrors should be added here as each final public record goes live. These mirrors should carry the same public-safe files and should point back to this page, the GitHub release, Hugging Face, and Kaggle.</p>
 
   <h2>Privacy Boundary</h2>
   <p>The public study is not a release of Inspector Roofing's private production systems. It excludes customer names, exact addresses, full claim files, private photos, contracts, receipts, internal scoring, API keys, and operating logic. The public materials are designed for homeowner education, technical transparency, and privacy-safe research citation.</p>
@@ -104,6 +105,7 @@ This page should be the public website anchor for the Atlas Query Intelligence s
       "sameAs": [
         "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1",
         "https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo",
+        "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence",
         "https://orcid.org/0009-0000-2980-7543",
         "https://www.amazon.com/author/richard-nasser",
         "https://www.amazon.com/dp/B0H63DV2LR"

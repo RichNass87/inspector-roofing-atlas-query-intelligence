@@ -1,11 +1,11 @@
 {
-  "title": "Inspector Roofing Atlas Query Intelligence Public-Safe Dataset",
+  "title": "Roofing Atlas Query Intelligence",
   "id": "inspectorroofing/inspector-roofing-atlas-query-intelligence",
   "licenses": [
     {
       "name": "Apache 2.0"
     }
   ],
-  "subtitle": "Sanitized local roofing AI-query examples, proof-gallery routing concepts, schemas, and privacy-first documentation.",
+  "subtitle": "Public-safe local roofing AI-query examples and schemas.",
   "description": "A public-safe technical dataset for mapping sanitized homeowner prompts and observed AI-search query language to broad local roofing education themes. This release excludes customer records, private images, exact addresses, full photo manifests, API keys, claim files, receipts, contracts, and proprietary scoring rules."
 }

@@ -23,7 +23,7 @@ Use this file as the source-spine checklist after each platform is published.
 | ORCID | Richard Nasser researcher identifier and works list | Ready for work import | https://orcid.org/0009-0000-2980-7543 |
 | Zenodo | DOI for technical report / release archive | Pending DOI |  |
 | OSF | Research project mirror and citation context | Pending publish |  |
-| Kaggle | Optional dataset mirror | Pending publish |  |
+| Kaggle | Public-safe dataset mirror | Live | https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence |
 | Academia.edu | Technical-report PDF and abstract | Pending upload |  |
 | Amazon Author | Richard Nasser author profile | Live public reference | https://www.amazon.com/author/richard-nasser |
 | Amazon Book | Related source-spine book reference | Live public reference | https://www.amazon.com/dp/B0H63DV2LR |

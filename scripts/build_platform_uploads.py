@@ -59,11 +59,10 @@ def copy_tree(src: Path, dst: Path) -> None:
 def write_kaggle_metadata() -> None:
     source = ROOT / "kaggle-metadata.json"
     metadata = json.loads(source.read_text(encoding="utf-8"))
-    # Kaggle expects the plural filename.
-    (OUT / "datasets-metadata.json").write_text(
-        json.dumps(metadata, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    payload = json.dumps(metadata, indent=2) + "\n"
+    # Kaggle has used both names across CLI versions.
+    (OUT / "datasets-metadata.json").write_text(payload, encoding="utf-8")
+    (OUT / "dataset-metadata.json").write_text(payload, encoding="utf-8")
 
 
 def main() -> None:

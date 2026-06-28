@@ -28,7 +28,7 @@ This inventory keeps the public source-spine projects coordinated across GitHub,
 
 ## Next Project-Wide Cleanup Order
 
-1. Publish the current Atlas Query Intelligence package to Kaggle after `~/.kaggle/kaggle.json` is present.
+1. Keep the current Atlas Query Intelligence Kaggle mirror versioned at https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence.
 2. Create or select the matching OSF project, then run `OSF_PROJECT_ID="..." bash scripts/osf_publish.sh`.
 3. Import `data/orcid_works.bib` into ORCID for the current Atlas Query Intelligence package.
 4. Review `data/public_project_inventory.csv` and decide which remaining projects deserve Kaggle/OSF mirrors versus ORCID-only work entries.
@@ -38,7 +38,7 @@ This inventory keeps the public source-spine projects coordinated across GitHub,
 
 Publishing cannot be completed from this repo without platform authorization:
 
-- Kaggle requires `~/.kaggle/kaggle.json`.
+- Kaggle requires `~/.kaggle/kaggle.json` for future version uploads.
 - OSF requires `osf init`, `~/.osfcli.config`, or an authenticated environment.
 - ORCID writes require OAuth work-update permission.
 

@@ -8,6 +8,7 @@ GitHub and Hugging Face are live. The remaining platforms require either API tok
 - GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
+- Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
 - ORCID: https://orcid.org/0009-0000-2980-7543
 - Inspector Roofing: https://inspector-roofing.com/
 - Amazon Author: https://www.amazon.com/author/richard-nasser
@@ -41,14 +42,16 @@ ZENODO_ACCESS_TOKEN="paste-token-here" ZENODO_PUBLISH=1 python3 scripts/zenodo_p
 
 ## Kaggle
 
-1. Open https://www.kaggle.com/settings/account
-2. Create API token and place `kaggle.json` at `~/.kaggle/kaggle.json`.
-3. Run:
+Published:
+
+https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
+
+To publish a later version:
 
 ```bash
 python3 -m pip install --user kaggle
 cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1
-bash scripts/kaggle_publish.sh
+KAGGLE_MODE=version bash scripts/kaggle_publish.sh
 ```
 
 The script builds a public-safe staging folder at `build/platform-upload`, writes Kaggle's required `datasets-metadata.json`, and versions the existing Kaggle dataset automatically when possible. To force a mode:

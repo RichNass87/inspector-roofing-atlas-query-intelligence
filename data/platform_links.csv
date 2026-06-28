@@ -10,5 +10,5 @@ Hugging Face Dataset,Dataset card and public-safe records,live,https://huggingfa
 Hugging Face Space,Gradio demo,live,https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo,Public Gradio demo
 Zenodo,DOI and archived technical report,pending,,Add DOI after Zenodo record is created
 OSF,Research mirror,pending,,Optional mirror after DOI and GitHub are live
-Kaggle,Dataset mirror,pending,,Optional mirror for sanitized dataset files
+Kaggle,Dataset mirror,live,https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence,Sanitized dataset mirror for public-safe files
 Academia.edu,Technical report mirror,pending,,Upload PDF after DOI exists
