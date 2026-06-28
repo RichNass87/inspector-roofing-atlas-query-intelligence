@@ -51,7 +51,7 @@ cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1
 bash scripts/kaggle_publish.sh
 ```
 
-If the dataset already exists, this script now versions it automatically. To force a mode:
+The script builds a public-safe staging folder at `build/platform-upload`, writes Kaggle's required `datasets-metadata.json`, and versions the existing Kaggle dataset automatically when possible. To force a mode:
 
 ```bash
 KAGGLE_MODE=version bash scripts/kaggle_publish.sh
@@ -74,6 +74,8 @@ CLI path after project creation:
 cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1
 OSF_PROJECT_ID="paste-project-id" bash scripts/osf_publish.sh
 ```
+
+The OSF script uploads the release zip, report PDF, OSF description, platform links, project inventory, and ORCID BibTeX from the public-safe staging folder.
 
 ## ORCID
 

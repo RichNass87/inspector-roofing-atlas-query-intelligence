@@ -103,6 +103,7 @@ docs/ZENODO_ACADEMIA_ABSTRACT.md
 docs/PUBLISHING_GUIDE.md
 docs/ORCID_UPDATE_NOTES.md
 docs/ALL_PROJECTS_PLATFORM_ROLLOUT.md
+scripts/build_platform_uploads.py
 scripts/validate_release.py
 scripts/kaggle_publish.sh
 scripts/osf_publish.sh

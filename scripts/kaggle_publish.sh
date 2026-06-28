@@ -28,19 +28,20 @@ chmod 600 "$HOME/.kaggle/kaggle.json"
 
 MODE="${KAGGLE_MODE:-auto}"
 MESSAGE="${KAGGLE_MESSAGE:-v1.0.1 public-safe source-spine update}"
+UPLOAD_DIR="$(python3 scripts/build_platform_uploads.py)"
 
 case "$MODE" in
   create)
-    "$KAGGLE_BIN" datasets create -p . --dir-mode zip
+    "$KAGGLE_BIN" datasets create -p "$UPLOAD_DIR" --public --dir-mode zip
     ;;
   version)
-    "$KAGGLE_BIN" datasets version -p . -m "$MESSAGE" --dir-mode zip
+    "$KAGGLE_BIN" datasets version -p "$UPLOAD_DIR" -m "$MESSAGE" --dir-mode zip
     ;;
   auto)
-    if "$KAGGLE_BIN" datasets version -p . -m "$MESSAGE" --dir-mode zip; then
+    if "$KAGGLE_BIN" datasets version -p "$UPLOAD_DIR" -m "$MESSAGE" --dir-mode zip; then
       exit 0
     fi
-    "$KAGGLE_BIN" datasets create -p . --dir-mode zip
+    "$KAGGLE_BIN" datasets create -p "$UPLOAD_DIR" --public --dir-mode zip
     ;;
   *)
     echo "ERROR: KAGGLE_MODE must be auto, create, or version." >&2

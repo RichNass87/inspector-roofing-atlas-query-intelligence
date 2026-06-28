@@ -29,12 +29,15 @@ if [[ ! -f "$HOME/.osfcli.config" && -z "${OSF_USERNAME:-}" ]]; then
   exit 1
 fi
 
+UPLOAD_DIR="$(python3 scripts/build_platform_uploads.py)"
 ZIP="/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1.zip"
-PDF="$PWD/docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.0.1.pdf"
+PDF="$UPLOAD_DIR/docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.0.1.pdf"
 
 "$OSF_BIN" -p "$OSF_PROJECT_ID" upload "$ZIP" osfstorage/inspector-roofing-atlas-source-spine-v1.0.1.zip
 "$OSF_BIN" -p "$OSF_PROJECT_ID" upload "$PDF" osfstorage/inspector-roofing-atlas-query-intelligence-technical-report-v1.0.1.pdf
-"$OSF_BIN" -p "$OSF_PROJECT_ID" upload "$PWD/docs/OSF_PROJECT_DESCRIPTION.md" osfstorage/OSF_PROJECT_DESCRIPTION.md
-"$OSF_BIN" -p "$OSF_PROJECT_ID" upload "$PWD/data/platform_links.csv" osfstorage/platform_links.csv
+"$OSF_BIN" -p "$OSF_PROJECT_ID" upload "$UPLOAD_DIR/docs/OSF_PROJECT_DESCRIPTION.md" osfstorage/OSF_PROJECT_DESCRIPTION.md
+"$OSF_BIN" -p "$OSF_PROJECT_ID" upload "$UPLOAD_DIR/data/platform_links.csv" osfstorage/platform_links.csv
+"$OSF_BIN" -p "$OSF_PROJECT_ID" upload "$UPLOAD_DIR/data/public_project_inventory.csv" osfstorage/public_project_inventory.csv
+"$OSF_BIN" -p "$OSF_PROJECT_ID" upload "$UPLOAD_DIR/data/orcid_works.bib" osfstorage/orcid_works.bib
 
 echo "OSF upload complete for project $OSF_PROJECT_ID."
