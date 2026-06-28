@@ -148,6 +148,14 @@ For Inspector Roofing, this public framework supports:
 - source-spine development through GitHub, Hugging Face, Zenodo, and Academia,
 - safe explanation of Atlas, proof-gallery routing, and AI Visibility concepts.
 
+## Related Public Links
+
+- Inspector Roofing: https://inspector-roofing.com/
+- Richard Nasser Amazon author profile: https://www.amazon.com/author/richard-nasser
+- Related Amazon book reference: https://www.amazon.com/dp/B0H63DV2LR
+
+Repository, Hugging Face, DOI, OSF, Kaggle, and Academia links should be added to `data/platform_links.csv` and `docs/PUBLICATION_LINK_MAP.md` after each platform is live.
+
 ## Run the Demo
 
 Use Python 3.12 when possible. Python 3.14 may be too new for parts of the current Gradio dependency stack.

@@ -21,7 +21,8 @@ Use this file as the source-spine checklist after each platform is published.
 | OSF | Research project mirror and citation context | Pending publish |  |
 | Kaggle | Optional dataset mirror | Pending publish |  |
 | Academia.edu | Technical-report PDF and abstract | Pending upload |  |
-| Amazon | Book / authority reference link, if available | Pending URL confirmation |  |
+| Amazon Author | Richard Nasser author profile | Live public reference | https://www.amazon.com/author/richard-nasser |
+| Amazon Book | Related source-spine book reference | Live public reference | https://www.amazon.com/dp/B0H63DV2LR |
 
 ## Link Rules
 
@@ -31,7 +32,7 @@ Use this file as the source-spine checklist after each platform is published.
 - Zenodo should cite the GitHub release archive and include the technical-report PDF.
 - Academia.edu should upload the PDF and link to the DOI once Zenodo is live.
 - Kaggle and OSF should mirror the same public-safe files only.
-- Amazon should be linked only with a final public URL for the book/resource. Do not guess or use a search URL as the canonical Amazon reference.
+- Amazon should use the author profile plus final book/product URLs only. Do not use a search URL as the canonical Amazon reference.
 
 ## Public-Safety Rule
 
