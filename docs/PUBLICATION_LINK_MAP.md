@@ -14,7 +14,7 @@ Use this file as the source-spine checklist after each platform is published.
 
 | Platform | Purpose | Status | Final URL |
 | --- | --- | --- | --- |
-| GitHub | Source code, schemas, dataset samples, validation | Pending publish |  |
+| GitHub | Source code, schemas, dataset samples, validation | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence |
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Pending publish |  |
 | Hugging Face Space | Gradio public demo | Pending publish |  |
 | Zenodo | DOI for technical report / release archive | Pending DOI |  |

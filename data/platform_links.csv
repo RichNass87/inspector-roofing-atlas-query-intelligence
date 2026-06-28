@@ -2,7 +2,7 @@ platform,role,status,url,notes
 Inspector Roofing,Primary website,live,https://inspector-roofing.com/,Primary business and public entity website
 Amazon Author,Author profile,live,https://www.amazon.com/author/richard-nasser,Richard Nasser author profile
 Amazon Book,Related book reference,live,https://www.amazon.com/dp/B0H63DV2LR,Related source-spine book reference already used in public Inspector Roofing dataset context
-GitHub,Source repository,pending,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence,Create or update after GitHub CLI/browser authorization
+GitHub,Source repository,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence,Public source repository
 Hugging Face Dataset,Dataset card and public-safe records,pending,https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence,Create or update after Hugging Face authorization
 Hugging Face Space,Gradio demo,pending,https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo,Create or update after Hugging Face authorization
 Zenodo,DOI and archived technical report,pending,,Add DOI after Zenodo record is created
