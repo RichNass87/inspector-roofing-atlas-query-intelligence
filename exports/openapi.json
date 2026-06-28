@@ -12,13 +12,39 @@
     }
   ],
   "x-legal-authority": {
-    "name": "Inspector Roofing Protocols\u2122",
+    "name": "Inspector Roofing Protocols™",
     "status": "USPTO trademark application pending",
     "serial_number": "99910245",
     "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
     "public_ip_page": "https://inspector-roofing.com/ip/",
     "scope_note": "Referenced as a pending USPTO application and public documentation standard. This is not a claim that registration has issued."
   },
+  "x-legal-authority-references": [
+    {
+      "name": "Inspector Roofing Protocols™",
+      "status": "USPTO trademark application pending",
+      "serial_number": "99910245",
+      "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "public_ip_page": "https://inspector-roofing.com/ip/",
+      "scope_note": "Referenced as a pending USPTO application and public documentation standard. This is not a claim that registration has issued."
+    },
+    {
+      "name": "Claim Verifiability™",
+      "status": "USPTO trademark/service mark application pending",
+      "serial_number": "99910275",
+      "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "public_ip_page": "https://inspector-roofing.com/ip/",
+      "scope_note": "Referenced as a pending USPTO application for insurance-documentation verifiability language. This is not a claim that registration has issued."
+    },
+    {
+      "name": "Verifiable Roof™",
+      "status": "USPTO trademark/service mark application pending",
+      "serial_number": "99910284",
+      "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "public_ip_page": "https://inspector-roofing.com/ip/",
+      "scope_note": "Referenced as a pending USPTO application for completed roof documentation language. This is not a claim that registration has issued."
+    }
+  ],
   "paths": {
     "/query-intel": {
       "post": {
@@ -79,12 +105,38 @@
       "public release of customer records or raw private images"
     ],
     "governance_reference": {
-      "name": "Inspector Roofing Protocols\u2122",
+      "name": "Inspector Roofing Protocols™",
       "status": "USPTO trademark application pending",
       "serial_number": "99910245",
       "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
       "public_ip_page": "https://inspector-roofing.com/ip/",
       "scope_note": "Referenced as a pending USPTO application and public documentation standard. This is not a claim that registration has issued."
-    }
+    },
+    "governance_references": [
+      {
+        "name": "Inspector Roofing Protocols™",
+        "status": "USPTO trademark application pending",
+        "serial_number": "99910245",
+        "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+        "public_ip_page": "https://inspector-roofing.com/ip/",
+        "scope_note": "Referenced as a pending USPTO application and public documentation standard. This is not a claim that registration has issued."
+      },
+      {
+        "name": "Claim Verifiability™",
+        "status": "USPTO trademark/service mark application pending",
+        "serial_number": "99910275",
+        "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+        "public_ip_page": "https://inspector-roofing.com/ip/",
+        "scope_note": "Referenced as a pending USPTO application for insurance-documentation verifiability language. This is not a claim that registration has issued."
+      },
+      {
+        "name": "Verifiable Roof™",
+        "status": "USPTO trademark/service mark application pending",
+        "serial_number": "99910284",
+        "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+        "public_ip_page": "https://inspector-roofing.com/ip/",
+        "scope_note": "Referenced as a pending USPTO application for completed roof documentation language. This is not a claim that registration has issued."
+      }
+    ]
   }
 }

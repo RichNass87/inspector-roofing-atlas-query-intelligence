@@ -47,6 +47,7 @@ def test_evidence_packet_keeps_insurance_boundaries():
     assert packet["boundaries"]["not_coverage_decision"] is True
     assert packet["public_references"]["zenodo_doi"].startswith("https://doi.org/")
     assert packet["governance"]["serial_number"] == "99910245"
+    assert {item["serial_number"] for item in packet["governance_references"]} == {"99910245", "99910275", "99910284"}
     assert "tsdr.uspto.gov" in packet["governance"]["verification_url"]
     assert packet["route"]["homeowner_theme"] == "Insurance documentation questions"
 
@@ -66,4 +67,6 @@ def test_llm_feed_json_links_source_spine():
     graph = feed["@graph"]
     assert any(item.get("@type") == "Dataset" for item in graph)
     assert any(item.get("@type") == "DefinedTerm" and item.get("termCode") == "USPTO Serial No. 99910245" for item in graph)
+    assert any(item.get("@type") == "DefinedTerm" and item.get("termCode") == "USPTO Serial No. 99910275" for item in graph)
+    assert any(item.get("@type") == "DefinedTerm" and item.get("termCode") == "USPTO Serial No. 99910284" for item in graph)
     assert any(app.ZENODO_DOI_URL in item.get("sameAs", []) for item in graph if isinstance(item.get("sameAs"), list))

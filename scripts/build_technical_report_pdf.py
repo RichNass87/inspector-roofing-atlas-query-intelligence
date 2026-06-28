@@ -46,7 +46,7 @@ SECTIONS = [
     ),
     (
         "Legal And Framework Verification",
-        "Inspector Roofing Protocols\u2122 is referenced as a pending USPTO trademark application, Serial No. 99910245. The public TSDR verification record is https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch. This report uses that record as a public verification reference for the documentation framework and does not describe the mark as registered unless the USPTO status later changes.",
+        "This public framework references Inspector Roofing Protocols\u2122 as a pending USPTO trademark application, Serial No. 99910245; Claim Verifiability\u2122 as a pending USPTO trademark/service mark application, Serial No. 99910275; and Verifiable Roof\u2122 as a pending USPTO trademark/service mark application, Serial No. 99910284. Public TSDR verification records are available for each serial number. This report uses those records as public verification references for the documentation framework and does not describe the marks as registered unless the USPTO status later changes.",
     ),
     (
         "Practical Use",

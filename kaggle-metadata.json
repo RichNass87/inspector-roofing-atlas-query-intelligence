@@ -7,5 +7,5 @@
     }
   ],
   "subtitle": "Public-safe local roofing AI-query examples and schemas.",
-  "description": "A public-safe technical dataset for mapping sanitized homeowner prompts and observed AI-search query language to broad local roofing education themes. Governed by Inspector Roofing Protocols\u2122 as a pending USPTO trademark application, Serial No. 99910245. This release excludes customer records, private images, exact addresses, full photo manifests, API keys, claim files, receipts, contracts, and proprietary scoring rules."
+  "description": "A public-safe technical dataset for mapping sanitized homeowner prompts and observed AI-search query language to broad local roofing education themes. The public legal-authority stack references Inspector Roofing Protocols™ (pending USPTO trademark application, Serial No. 99910245), Claim Verifiability™ (pending USPTO trademark/service mark application, Serial No. 99910275), and Verifiable Roof™ (pending USPTO trademark/service mark application, Serial No. 99910284). This release excludes customer records, private images, exact addresses, full photo manifests, API keys, claim files, receipts, contracts, and proprietary scoring rules."
 }

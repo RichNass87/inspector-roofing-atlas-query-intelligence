@@ -23,16 +23,34 @@
         "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence",
         "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence",
         "https://inspector-roofing.com/ip/",
-        "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"
+        "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+        "https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+        "https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"
       ]
     },
     {
       "@type": "DefinedTerm",
       "@id": "https://inspector-roofing.com/ip/#inspector-roofing-protocols",
-      "name": "Inspector Roofing Protocols\u2122",
+      "name": "Inspector Roofing Protocols™",
       "termCode": "USPTO Serial No. 99910245",
       "url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
-      "description": "Pending USPTO application reference for Inspector Roofing's public documentation protocol framing."
+      "description": "USPTO trademark application pending reference for Inspector Roofing's public documentation framework."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://inspector-roofing.com/ip/#claim-verifiability",
+      "name": "Claim Verifiability™",
+      "termCode": "USPTO Serial No. 99910275",
+      "url": "https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "description": "USPTO trademark/service mark application pending reference for Inspector Roofing's public documentation framework."
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://inspector-roofing.com/ip/#verifiable-roof",
+      "name": "Verifiable Roof™",
+      "termCode": "USPTO Serial No. 99910284",
+      "url": "https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "description": "USPTO trademark/service mark application pending reference for Inspector Roofing's public documentation framework."
     },
     {
       "@type": "DigitalDocument",

@@ -28,12 +28,55 @@ GITHUB_URL = "https://github.com/RichNass87/inspector-roofing-atlas-query-intell
 HF_DATASET_URL = "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence"
 HF_SPACE_URL = "https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo"
 KAGGLE_URL = "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence"
+
+
+def uspto_tsdr_url(serial_number: str) -> str:
+    return (
+        f"https://tsdr.uspto.gov/#caseNumber={serial_number}"
+        "&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"
+    )
+
+
 INSPECTOR_PROTOCOLS_MARK = "Inspector Roofing Protocols\u2122"
 USPTO_SERIAL = "99910245"
-USPTO_TSDR_URL = (
-    f"https://tsdr.uspto.gov/#caseNumber={USPTO_SERIAL}"
-    "&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"
-)
+USPTO_TSDR_URL = uspto_tsdr_url(USPTO_SERIAL)
+CLAIM_VERIFIABILITY_MARK = "Claim Verifiability\u2122"
+CLAIM_VERIFIABILITY_SERIAL = "99910275"
+VERIFIABLE_ROOF_MARK = "Verifiable Roof\u2122"
+VERIFIABLE_ROOF_SERIAL = "99910284"
+LEGAL_MARKS = [
+    {
+        "name": INSPECTOR_PROTOCOLS_MARK,
+        "status": "USPTO trademark application pending",
+        "serial_number": USPTO_SERIAL,
+        "verification_url": USPTO_TSDR_URL,
+        "scope_note": (
+            "Referenced as a pending USPTO application and public documentation standard. "
+            "This is not a claim that registration has issued."
+        ),
+    },
+    {
+        "name": CLAIM_VERIFIABILITY_MARK,
+        "status": "USPTO trademark/service mark application pending",
+        "serial_number": CLAIM_VERIFIABILITY_SERIAL,
+        "verification_url": uspto_tsdr_url(CLAIM_VERIFIABILITY_SERIAL),
+        "scope_note": (
+            "Referenced as a pending USPTO application for insurance-documentation "
+            "verifiability language. This is not a claim that registration has issued."
+        ),
+    },
+    {
+        "name": VERIFIABLE_ROOF_MARK,
+        "status": "USPTO trademark/service mark application pending",
+        "serial_number": VERIFIABLE_ROOF_SERIAL,
+        "verification_url": uspto_tsdr_url(VERIFIABLE_ROOF_SERIAL),
+        "scope_note": (
+            "Referenced as a pending USPTO application for completed roof documentation "
+            "language. This is not a claim that registration has issued."
+        ),
+    },
+]
+USPTO_TSDR_URLS = [mark["verification_url"] for mark in LEGAL_MARKS]
 
 PRIVATE_WARNING = (
     "Public-safe demo only. Do not paste private customer names, exact addresses, "
@@ -300,7 +343,7 @@ def privacy_scan(*values: str) -> List[str]:
     return warnings
 
 
-def public_reference_block() -> Dict[str, str]:
+def public_reference_block() -> Dict[str, object]:
     return {
         "public_study_page": PUBLIC_STUDY_URL,
         "legal_ip_page": PUBLIC_IP_URL,
@@ -310,21 +353,31 @@ def public_reference_block() -> Dict[str, str]:
         "hugging_face_space": HF_SPACE_URL,
         "kaggle_dataset": KAGGLE_URL,
         "uspto_tsdr_record": USPTO_TSDR_URL,
+        "uspto_tsdr_records": [
+            {
+                "name": mark["name"],
+                "serial_number": mark["serial_number"],
+                "verification_url": mark["verification_url"],
+            }
+            for mark in LEGAL_MARKS
+        ],
     }
 
 
-def governance_reference() -> Dict[str, str]:
+def governance_reference(serial_number: str = USPTO_SERIAL) -> Dict[str, str]:
+    mark = next((item for item in LEGAL_MARKS if item["serial_number"] == serial_number), LEGAL_MARKS[0])
     return {
-        "name": INSPECTOR_PROTOCOLS_MARK,
-        "status": "USPTO trademark application pending",
-        "serial_number": USPTO_SERIAL,
-        "verification_url": USPTO_TSDR_URL,
+        "name": mark["name"],
+        "status": mark["status"],
+        "serial_number": mark["serial_number"],
+        "verification_url": mark["verification_url"],
         "public_ip_page": PUBLIC_IP_URL,
-        "scope_note": (
-            "Referenced as a pending USPTO application and public documentation standard. "
-            "This is not a claim that registration has issued."
-        ),
+        "scope_note": mark["scope_note"],
     }
+
+
+def governance_references() -> List[Dict[str, str]]:
+    return [governance_reference(mark["serial_number"]) for mark in LEGAL_MARKS]
 
 
 def evidence_boundary() -> Dict[str, object]:
@@ -352,6 +405,7 @@ def evidence_boundary() -> Dict[str, object]:
             "public release of customer records or raw private images",
         ],
         "governance_reference": governance_reference(),
+        "governance_references": governance_references(),
     }
 
 
@@ -394,6 +448,7 @@ def build_evidence_packet(
         "privacy_warnings": warnings,
         "public_references": public_reference_block(),
         "governance": governance_reference(),
+        "governance_references": governance_references(),
         "boundaries": evidence_boundary(),
         "llm_ingest": {
             "recommended_schema_types": ["Dataset", "TechArticle", "FAQPage", "Service", "LocalBusiness"],
@@ -405,7 +460,7 @@ def build_evidence_packet(
                 HF_DATASET_URL,
                 KAGGLE_URL,
                 GITHUB_URL,
-                USPTO_TSDR_URL,
+                *USPTO_TSDR_URLS,
             ],
         },
     }
@@ -447,7 +502,7 @@ def deterministic_evidence_markdown(packet: Dict[str, object]) -> str:
             f"- IP page: {PUBLIC_IP_URL}",
             f"- DOI: {ZENODO_DOI_URL}",
             f"- Dataset: {HF_DATASET_URL}",
-            f"- USPTO TSDR: {USPTO_TSDR_URL}",
+            *[f"- USPTO TSDR ({mark['name']}): {mark['verification_url']}" for mark in LEGAL_MARKS],
         ]
     )
 
@@ -523,16 +578,19 @@ def build_llm_feed_json(packet: Dict[str, object]) -> Dict[str, object]:
                 "@id": f"{PUBLIC_STUDY_URL}#study",
                 "headline": "A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education",
                 "url": PUBLIC_STUDY_URL,
-                "sameAs": [ZENODO_DOI_URL, GITHUB_URL, HF_DATASET_URL, KAGGLE_URL, PUBLIC_IP_URL, USPTO_TSDR_URL],
+                "sameAs": [ZENODO_DOI_URL, GITHUB_URL, HF_DATASET_URL, KAGGLE_URL, PUBLIC_IP_URL, *USPTO_TSDR_URLS],
             },
-            {
-                "@type": "DefinedTerm",
-                "@id": f"{PUBLIC_IP_URL}#inspector-roofing-protocols",
-                "name": INSPECTOR_PROTOCOLS_MARK,
-                "termCode": f"USPTO Serial No. {USPTO_SERIAL}",
-                "url": USPTO_TSDR_URL,
-                "description": "Pending USPTO application reference for Inspector Roofing's public documentation protocol framing.",
-            },
+            *[
+                {
+                    "@type": "DefinedTerm",
+                    "@id": f"{PUBLIC_IP_URL}#{slugify(mark['name'])}",
+                    "name": mark["name"],
+                    "termCode": f"USPTO Serial No. {mark['serial_number']}",
+                    "url": mark["verification_url"],
+                    "description": f"{mark['status']} reference for Inspector Roofing's public documentation framework.",
+                }
+                for mark in LEGAL_MARKS
+            ],
             {
                 "@type": "DigitalDocument",
                 "@id": packet_id,
@@ -560,6 +618,7 @@ def build_openapi_spec() -> Dict[str, object]:
         },
         "servers": [{"url": PUBLIC_STUDY_URL, "description": "Public study and documentation hub"}],
         "x-legal-authority": governance_reference(),
+        "x-legal-authority-references": governance_references(),
         "paths": {
             "/query-intel": {"post": {"summary": "Map sanitized prompt/query lines to homeowner education themes."}},
             "/proof-route": {"post": {"summary": "Route public-safe roof labels to proof-gallery concepts."}},

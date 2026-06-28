@@ -80,11 +80,19 @@ The public demo does **not** publish exact customer addresses, faces, license pl
 
 ## Legal And Public Authority References
 
-Inspector Roofing Protocols™ is referenced as a pending USPTO trademark application, **Serial No. 99910245**. The public verification link is:
+This public source-spine references the following marks as pending USPTO applications only:
 
-https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- Inspector Roofing Protocols™: pending USPTO trademark application, **Serial No. 99910245**.
+- Claim Verifiability™: pending USPTO trademark/service mark application, **Serial No. 99910275**.
+- Verifiable Roof™: pending USPTO trademark/service mark application, **Serial No. 99910284**.
 
-This public source-spine describes the mark as a pending application only. It should not be described as a registered trademark unless the USPTO status later changes.
+Public verification links:
+
+- https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+
+These records should not be described as registered trademarks unless the USPTO status later changes.
 
 ## Repository Layout
 
@@ -180,6 +188,8 @@ For Inspector Roofing, this public framework supports:
 - Suggested Inspector Roofing study page: https://inspector-roofing.com/atlas-query-intelligence-study/
 - Suggested Inspector Roofing IP page: https://inspector-roofing.com/ip/
 - USPTO TSDR record for Inspector Roofing Protocols™ Serial No. 99910245: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- USPTO TSDR record for Claim Verifiability™ Serial No. 99910275: https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- USPTO TSDR record for Verifiable Roof™ Serial No. 99910284: https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 - Richard Nasser ORCID: https://orcid.org/0009-0000-2980-7543
 - Richard Nasser Amazon author profile: https://www.amazon.com/author/richard-nasser
 - Related Amazon book reference: https://www.amazon.com/dp/B0H63DV2LR

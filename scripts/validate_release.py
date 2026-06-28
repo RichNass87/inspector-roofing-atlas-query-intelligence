@@ -69,14 +69,20 @@ def validate_photo_boundary() -> None:
 def validate_legal_authority() -> None:
     refs = load_json(ROOT / "data" / "legal_authority_references.json")
     serialized = json.dumps(refs)
-    if "99910245" not in serialized:
-        fail("Legal authority references must include USPTO Serial No. 99910245.")
+    required_serials = {"99910245", "99910275", "99910284"}
+    for serial in required_serials:
+        if serial not in serialized:
+            fail(f"Legal authority references must include USPTO Serial No. {serial}.")
     if "tsdr.uspto.gov" not in serialized:
         fail("Legal authority references must include the USPTO TSDR verification URL.")
     openapi = load_json(ROOT / "exports" / "openapi.json")
     authority = openapi.get("x-legal-authority", {})
     if authority.get("serial_number") != "99910245":
         fail("OpenAPI x-legal-authority must include USPTO Serial No. 99910245.")
+    openapi_refs = openapi.get("x-legal-authority-references", [])
+    openapi_serials = {item.get("serial_number") for item in openapi_refs}
+    if not required_serials.issubset(openapi_serials):
+        fail("OpenAPI x-legal-authority-references must include all pending USPTO serials.")
 
 
 def validate_app_import() -> None:

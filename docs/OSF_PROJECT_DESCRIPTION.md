@@ -10,7 +10,11 @@ This OSF project mirrors a public-safe technical framework for local roofing AI 
 
 The private production system and private customer data are intentionally excluded. The public materials do not include exact customer addresses, claim records, raw customer photos, full photo manifests, faces, license plates, receipts, contracts, API keys, private WordPress plugin logic, or operational scoring rules.
 
-Inspector Roofing Protocols™ is referenced as a pending USPTO trademark application, Serial No. 99910245. Public verification: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch.
+Public legal-authority references:
+
+- Inspector Roofing Protocols™ is referenced as a pending USPTO trademark application, Serial No. 99910245. Public verification: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch.
+- Claim Verifiability™ is referenced as a pending USPTO trademark/service mark application, Serial No. 99910275. Public verification: https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch.
+- Verifiable Roof™ is referenced as a pending USPTO trademark/service mark application, Serial No. 99910284. Public verification: https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch.
 
 ## Suggested Tags
 
@@ -28,6 +32,8 @@ Inspector Roofing Protocols™ is referenced as a pending USPTO trademark applic
 - Suggested Inspector Roofing study page: https://inspector-roofing.com/atlas-query-intelligence-study/
 - Legal and IP references: https://inspector-roofing.com/ip/
 - USPTO TSDR Serial No. 99910245: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- USPTO TSDR Serial No. 99910275: https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- USPTO TSDR Serial No. 99910284: https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 - ORCID: https://orcid.org/0009-0000-2980-7543
 - GitHub: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
 - GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1

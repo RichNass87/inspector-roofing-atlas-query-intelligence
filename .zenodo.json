@@ -8,7 +8,7 @@
       "affiliation": "Inspector Roofing and Restoration"
     }
   ],
-  "description": "This framework establishes a privacy-first methodology for mapping natural language intent to localized, structured web nodes without compromising user privacy or operational data. The public release includes sanitized query-intelligence records, JSON schemas, roof-photo label taxonomy examples, aggregate proof-gallery routing concepts, a Gradio demonstration app, a public-safe insurance evidence packet builder, an LLM-feed JSON-LD export, a reference OpenAPI schema, and a public legal-authority reference for Inspector Roofing Protocols\u2122 as a pending USPTO trademark application, Serial No. 99910245.",
+  "description": "This framework establishes a privacy-first methodology for mapping natural language intent to localized, structured web nodes without compromising user privacy or operational data. The public release includes sanitized query-intelligence records, JSON schemas, roof-photo label taxonomy examples, aggregate proof-gallery routing concepts, a Gradio demonstration app, a public-safe insurance evidence packet builder, an LLM-feed JSON-LD export, a reference OpenAPI schema, and public legal-authority references for Inspector Roofing Protocols™ (pending USPTO trademark application, Serial No. 99910245), Claim Verifiability™ (pending USPTO trademark/service mark application, Serial No. 99910275), and Verifiable Roof™ (pending USPTO trademark/service mark application, Serial No. 99910284).",
   "keywords": [
     "Generative Engine Optimization",
     "Local Search Architecture",
@@ -18,7 +18,11 @@
     "AI Visibility",
     "Privacy-Preserving Data",
     "Trademark Application",
-    "USPTO Serial No. 99910245"
+    "USPTO Serial No. 99910245",
+    "USPTO Serial No. 99910275",
+    "USPTO Serial No. 99910284",
+    "Claim Verifiability",
+    "Verifiable Roof"
   ],
   "related_identifiers": [
     {
@@ -53,6 +57,16 @@
     },
     {
       "identifier": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
       "relation": "references",
       "scheme": "url"
     }

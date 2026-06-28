@@ -8,6 +8,8 @@ Use this file as the source-spine checklist after each platform is published.
 - Suggested public study page: https://inspector-roofing.com/atlas-query-intelligence-study/
 - Prepared public IP copy only: `docs/INSPECTOR_ROOFING_IP_PAGE.md`
 - USPTO TSDR record for Inspector Roofing Protocols™ Serial No. 99910245: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- USPTO TSDR record for Claim Verifiability™ Serial No. 99910275: https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- USPTO TSDR record for Verifiable Roof™ Serial No. 99910284: https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 - Local demo when running on this Mac: http://127.0.0.1:7860/
 - Suggested GitHub repository: `inspector-roofing-atlas-query-intelligence`
 - Suggested Hugging Face dataset: `InspectorRoofing/inspector-roofing-atlas-query-intelligence`
@@ -20,6 +22,8 @@ Use this file as the source-spine checklist after each platform is published.
 | Inspector Roofing Study Page | Website authority hub for the public-safe study and source-spine links | Ready to publish | https://inspector-roofing.com/atlas-query-intelligence-study/ |
 | Inspector Roofing IP Page | Legal and research verification hub | Prepared only, not published by request | https://inspector-roofing.com/ip/ |
 | USPTO TSDR | Pending trademark application verification for Inspector Roofing Protocols™ Serial No. 99910245 | Live | https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch |
+| USPTO TSDR | Pending trademark/service mark application verification for Claim Verifiability™ Serial No. 99910275 | Live | https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch |
+| USPTO TSDR | Pending trademark/service mark application verification for Verifiable Roof™ Serial No. 99910284 | Live | https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch |
 | GitHub | Source code, schemas, dataset samples, validation | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence |
 | GitHub Release | Versioned v1.1.1 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1 |
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Live | https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence |

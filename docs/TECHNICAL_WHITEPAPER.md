@@ -31,11 +31,19 @@ This separation is central to the project. The public release gives researchers,
 
 ## Legal And Framework Verification
 
-Inspector Roofing Protocols™ is referenced as a pending USPTO trademark application, Serial No. 99910245. The public TSDR verification URL is:
+This public framework references three marks as pending USPTO applications:
 
-https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- Inspector Roofing Protocols™: pending USPTO trademark application, Serial No. 99910245.
+- Claim Verifiability™: pending USPTO trademark/service mark application, Serial No. 99910275.
+- Verifiable Roof™: pending USPTO trademark/service mark application, Serial No. 99910284.
 
-This paper uses that record as a public verification reference for the documentation framework. It does not describe the mark as registered unless the USPTO status later changes.
+Public TSDR verification URLs:
+
+- https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+- https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+
+This paper uses those records as public verification references for the documentation framework. It does not describe the marks as registered unless the USPTO status later changes.
 
 ## Example Use Case
 
