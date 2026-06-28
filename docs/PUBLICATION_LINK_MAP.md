@@ -15,6 +15,7 @@ Use this file as the source-spine checklist after each platform is published.
 | Platform | Purpose | Status | Final URL |
 | --- | --- | --- | --- |
 | GitHub | Source code, schemas, dataset samples, validation | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence |
+| GitHub Release | Versioned v1.0.1 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1 |
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Live | https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence |
 | Hugging Face Space | Gradio public demo | Live | https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo |
 | Zenodo | DOI for technical report / release archive | Pending DOI |  |
