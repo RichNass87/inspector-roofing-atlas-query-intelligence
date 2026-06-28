@@ -1,6 +1,6 @@
 # Remaining Publication Approvals
 
-GitHub and Hugging Face are live. The remaining platforms require either API tokens or final browser upload approval.
+GitHub, Hugging Face, Kaggle, Zenodo, and the v1.1.1 ORCID work entry are live. OSF and Academia are blocked by platform/account review, not by missing local files.
 
 ## Live Links
 
@@ -18,8 +18,8 @@ GitHub and Hugging Face are live. The remaining platforms require either API tok
 
 ## Files To Upload
 
-- Release zip: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.1.zip`
-- Technical report PDF: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.1/docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.1.1.pdf`
+- Technical report PDF: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1/docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.1.1.pdf`
+- Public-safe upload folder can be rebuilt with `python3 scripts/build_platform_uploads.py`.
 
 ## Zenodo DOI
 
@@ -100,27 +100,40 @@ The OSF script uploads the release zip, report PDF, OSF description, platform li
 
 ## ORCID
 
-Manual path:
+Status:
 
-1. Open https://orcid.org/0009-0000-2980-7543
-2. Go to Works.
-3. Import BibTeX from `data/orcid_works.bib`.
-4. Confirm the technical report, Hugging Face dataset, Hugging Face Space demo, and GitHub source repository.
+The v1.1.1 technical report DOI was added to ORCID on 2026-06-28 through "Add work with a DOI".
+
+- Profile: https://orcid.org/0009-0000-2980-7543
+- DOI added: https://doi.org/10.5281/zenodo.21013082
+- Works count after add: 11
+
+Future optional cleanup:
+
+1. Review whether the Hugging Face dataset, Hugging Face Space demo, and GitHub source repository should be added as separate ORCID works.
+2. If yes, import selected entries from `data/orcid_works.bib`.
 
 API path requires an ORCID OAuth token with activity/work update permission. Do not use or share a password.
 
 ## Academia.edu
 
-1. Open https://www.academia.edu/
-2. Upload the technical report PDF.
-3. Use `docs/ACADEMIA_UPLOAD_NOTES.md`.
-4. Include the DOI: https://doi.org/10.5281/zenodo.21011493.
+Status:
+
+Academia.edu shows: "Your account was flagged as suspicious, and your reconsideration request is awaiting manual review." Do not create a duplicate account or try to force uploads while this review is pending.
+
+After the account is restored:
+
+1. Upload the technical report PDF.
+2. Use `docs/ACADEMIA_UPLOAD_NOTES.md`.
+3. Include the v1.1.1 DOI: https://doi.org/10.5281/zenodo.21013082.
 
 ## Website Update
 
 Published website research page:
 
 https://inspector-roofing.com/atlas-query-intelligence-study/
+
+No `/ip/` page was published from this repo after the user requested information only. The prepared copy remains in `docs/INSPECTOR_ROOFING_IP_PAGE.md` and `exports/inspector-roofing-legal-ip-page.html`.
 
 The page should keep these source-spine links current:
 

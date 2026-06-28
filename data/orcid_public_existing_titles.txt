@@ -8,3 +8,4 @@ Total Market Authority Scorecard
 Inspection-First Roofing AI Language Standard
 Inspector Roofing Protocols: Open Technical Documentation Standard for Residential Roof Inspection Evidence Capture
 RichNass87/inspector-roofing-roof-damage-yolo: v1.0.0 - Initial Release: YOLO Roof Damage Detection Model
+A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education

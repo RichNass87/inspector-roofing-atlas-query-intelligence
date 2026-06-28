@@ -6,7 +6,7 @@ This inventory keeps the public source-spine projects coordinated across GitHub,
 
 - Public GitHub repos found under `RichNass87`: 14
 - ORCID profile checked: https://orcid.org/0009-0000-2980-7543
-- Public ORCID work groups currently visible: 10
+- Public ORCID work groups currently visible: 11
 - Current package-ready project: `inspector-roofing-atlas-query-intelligence`
 
 ## Files
@@ -30,7 +30,7 @@ This inventory keeps the public source-spine projects coordinated across GitHub,
 
 1. Keep the current Atlas Query Intelligence Kaggle mirror versioned at https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence.
 2. Restore OSF project https://osf.io/pqvwf/ from platform review, then run `OSF_PROJECT_ID="pqvwf" bash scripts/osf_publish.sh` or upload manually.
-3. Import `data/orcid_works.bib` into ORCID for the current Atlas Query Intelligence package.
+3. Optional only: add the Hugging Face dataset, Hugging Face Space demo, and GitHub source repository to ORCID if you want separate works beyond the completed v1.1.1 technical report DOI.
 4. Review `data/public_project_inventory.csv` and decide which remaining projects deserve Kaggle/OSF mirrors versus ORCID-only work entries.
 5. Add final Kaggle, OSF, ORCID, Zenodo DOI, and Academia URLs back into `data/platform_links.csv`, `docs/PUBLICATION_LINK_MAP.md`, README, GitHub release notes, and Hugging Face.
 
@@ -40,6 +40,6 @@ Publishing cannot be completed from this repo without platform authorization:
 
 - Kaggle requires `~/.kaggle/kaggle.json` for future version uploads.
 - OSF requires `osf init`, `~/.osfcli.config`, or an authenticated environment.
-- ORCID writes require OAuth work-update permission.
+- ORCID browser work entry for DOI `10.5281/zenodo.21013082` is complete; future API writes require OAuth work-update permission.
 
 Do not share passwords. Use API tokens or the platform's approved OAuth flow.
