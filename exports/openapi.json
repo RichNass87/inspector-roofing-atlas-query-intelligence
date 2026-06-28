@@ -1,0 +1,45 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Inspector Roofing AI Query Intelligence Public-Safe API",
+    "version": "1.1.0",
+    "description": "Reference OpenAPI schema for public-safe query intelligence, proof routing, insurance documentation packet generation, and LLM feed output."
+  },
+  "servers": [
+    {
+      "url": "https://inspector-roofing.com/atlas-query-intelligence-study/",
+      "description": "Public study and documentation hub"
+    }
+  ],
+  "paths": {
+    "/query-intel": {
+      "post": {
+        "summary": "Map sanitized prompt/query lines to homeowner education themes."
+      }
+    },
+    "/proof-route": {
+      "post": {
+        "summary": "Route public-safe roof labels to proof-gallery concepts."
+      }
+    },
+    "/evidence-packet": {
+      "post": {
+        "summary": "Build a carrier-safe evidence packet from sanitized notes and labels."
+      }
+    },
+    "/llm-feed": {
+      "post": {
+        "summary": "Return JSON-LD source-spine feed for LLM ingestion."
+      }
+    }
+  },
+  "x-public-safety": {
+    "not_public_adjuster": true,
+    "not_coverage_decision": true,
+    "not_engineering_opinion": true,
+    "not_causation_determination": true,
+    "not_claim_approval": true,
+    "raw_customer_images_included": 0,
+    "private_image_corpus_status": "approximately 39000 labeled roof-inspection images remain private"
+  }
+}

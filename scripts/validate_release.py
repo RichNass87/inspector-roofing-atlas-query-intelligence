@@ -62,8 +62,8 @@ def validate_photo_boundary() -> None:
         fail("Public release must not include raw customer images.")
     if summary["public_release"]["full_photo_manifest_included"]:
         fail("Public release must not include full photo manifests.")
-    if summary["private_production_corpus"]["approximate_labeled_image_count"] < 38000:
-        fail("Private corpus summary should reflect the 38k labeled image system.")
+    if summary["private_production_corpus"]["approximate_labeled_image_count"] < 39000:
+        fail("Private corpus summary should reflect the 39k labeled image system.")
 
 
 def validate_app_import() -> None:
@@ -78,7 +78,7 @@ def validate_app_import() -> None:
     markdown, payload = app.route_photo_labels("hail_hit, soft_metal_impact", "Alpharetta", "insurance roof inspection")
     if "Proof-Gallery Route" not in markdown:
         fail("app.route_photo_labels markdown failed.")
-    if "private 38k-image corpus" not in markdown:
+    if "private 39k-image corpus" not in markdown:
         fail("app.route_photo_labels must state the private corpus boundary.")
     json.loads(payload)
 

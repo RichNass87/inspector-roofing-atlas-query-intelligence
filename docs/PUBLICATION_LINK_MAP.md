@@ -17,12 +17,12 @@ Use this file as the source-spine checklist after each platform is published.
 | --- | --- | --- | --- |
 | Inspector Roofing Study Page | Website authority hub for the public-safe study and source-spine links | Ready to publish | https://inspector-roofing.com/atlas-query-intelligence-study/ |
 | GitHub | Source code, schemas, dataset samples, validation | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence |
-| GitHub Release | Versioned v1.0.1 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1 |
+| GitHub Release | Versioned v1.1.0 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0 |
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Live | https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence |
 | Hugging Face Space | Gradio public demo | Live | https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo |
 | ORCID | Richard Nasser researcher identifier and works list | Ready for work import | https://orcid.org/0009-0000-2980-7543 |
-| Zenodo | DOI for technical report / release archive | Pending DOI |  |
-| OSF | Research project mirror and citation context | Pending publish |  |
+| Zenodo | DOI for technical report / release archive | Live | https://doi.org/10.5281/zenodo.21011493 |
+| OSF | Research project mirror and citation context | Needs OSF review | https://osf.io/pqvwf/ |
 | Kaggle | Public-safe dataset mirror | Live | https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence |
 | Academia.edu | Technical-report PDF and abstract | Pending upload |  |
 | Amazon Author | Richard Nasser author profile | Live public reference | https://www.amazon.com/author/richard-nasser |
@@ -39,7 +39,7 @@ Project-wide cleanup inventory: `data/public_project_inventory.csv`.
 - Zenodo should cite the GitHub release archive and include the technical-report PDF.
 - ORCID should list the technical report, public-safe dataset, demo app, and source repository using `data/orcid_works.bib`.
 - Academia.edu should upload the PDF and link to the DOI once Zenodo is live.
-- Kaggle and OSF should mirror the same public-safe files only.
+- Kaggle and OSF should mirror the same public-safe files only. OSF project `pqvwf` needs platform review/restoration before it should be used publicly.
 - Amazon should use the author profile plus final book/product URLs only. Do not use a search URL as the canonical Amazon reference.
 
 ## Public-Safety Rule

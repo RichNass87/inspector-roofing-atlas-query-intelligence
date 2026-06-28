@@ -1,8 +1,12 @@
 import csv
 import io
 import json
+import os
 import re
+import urllib.error
+import urllib.request
 from collections import Counter
+from datetime import date
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -17,6 +21,13 @@ DATASET_PATH = ROOT / "dataset.json"
 ROUTES_PATH = ROOT / "data" / "proof_gallery_routes.json"
 PHOTO_SUMMARY_PATH = ROOT / "data" / "photo_corpus_public_summary.json"
 
+PUBLIC_STUDY_URL = "https://inspector-roofing.com/atlas-query-intelligence-study/"
+ZENODO_DOI_URL = "https://doi.org/10.5281/zenodo.21011493"
+GITHUB_URL = "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence"
+HF_DATASET_URL = "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence"
+HF_SPACE_URL = "https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo"
+KAGGLE_URL = "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence"
+
 PRIVATE_WARNING = (
     "Public-safe demo only. Do not paste private customer names, exact addresses, "
     "claim files, contracts, receipts, API keys, faces, license plates, private "
@@ -29,6 +40,18 @@ Who handles insurance roof inspections in Roswell? | Roswell GA insurance roof i
 Storm damage roof inspection near Douglasville | Douglasville GA storm damage roof inspection documented photos | Douglasville | storm damage roof inspection"""
 
 DEFAULT_LABELS = "hail_hit, wind_crease, soft_metal_impact, missing_shingle"
+
+DEFAULT_EVIDENCE_NOTES = """Observed lifted tabs on wind-facing slopes.
+Soft metal marks were documented separately from shingles.
+Several missing or displaced shingles were photographed.
+No customer name, exact address, claim number, contract, receipt, face, or license plate is included."""
+
+PRIVACY_PATTERNS = [
+    ("email address", re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I)),
+    ("phone number", re.compile(r"(?:\+?1[-.\s]?)?(?:\(?\d{3}\)?[-.\s]?)\d{3}[-.\s]?\d{4}")),
+    ("possible exact street address", re.compile(r"\b\d{2,6}\s+[A-Za-z0-9 .'-]{2,}\s+(?:st|street|ave|avenue|rd|road|dr|drive|ln|lane|ct|court|cir|circle|way|pkwy|parkway|blvd|boulevard)\b", re.I)),
+    ("possible claim or policy number", re.compile(r"\b(?:claim|policy|loss)\s*(?:#|number|no\.?)?\s*[:\-]?\s*[A-Z0-9-]{5,}\b", re.I)),
+]
 
 
 def load_json(path: Path, fallback):
@@ -255,24 +278,307 @@ def route_photo_labels(label_text: str, city: str, service_intent: str) -> Tuple
             f"**Suggested FAQ:** {payload['suggested_faq']}",
             f"**Authority hub:** {payload['canonical_authority_hub']}",
             "",
-            "This demo uses labels and aggregate concepts only. It does not expose the private 38k-image corpus.",
+            "This demo uses labels and aggregate concepts only. It does not expose the private 39k-image corpus.",
         ]
     )
     return markdown, json.dumps(payload, indent=2)
+
+
+def privacy_scan(*values: str) -> List[str]:
+    joined = "\n".join(clean_text(value, limit=4000) for value in values if value)
+    warnings = []
+    for label, pattern in PRIVACY_PATTERNS:
+        if pattern.search(joined):
+            warnings.append(f"Remove {label} before public sharing.")
+    return warnings
+
+
+def public_reference_block() -> Dict[str, str]:
+    return {
+        "public_study_page": PUBLIC_STUDY_URL,
+        "zenodo_doi": ZENODO_DOI_URL,
+        "github_repository": GITHUB_URL,
+        "hugging_face_dataset": HF_DATASET_URL,
+        "hugging_face_space": HF_SPACE_URL,
+        "kaggle_dataset": KAGGLE_URL,
+    }
+
+
+def evidence_boundary() -> Dict[str, object]:
+    photo_summary = load_json(PHOTO_SUMMARY_PATH, {})
+    return {
+        "not_public_adjuster": True,
+        "not_coverage_decision": True,
+        "not_engineering_opinion": True,
+        "not_causation_determination": True,
+        "not_claim_approval": True,
+        "private_corpus_boundary": photo_summary.get("private_production_corpus", {}),
+        "public_release_boundary": photo_summary.get("public_release", {}),
+        "allowed_use": [
+            "documentation completeness review",
+            "homeowner education",
+            "inspection summary drafting",
+            "privacy-safe evidence routing",
+            "structured data ingestion",
+        ],
+        "excluded_use": [
+            "insurance coverage determination",
+            "claim approval",
+            "engineering conclusion",
+            "legal advice",
+            "public release of customer records or raw private images",
+        ],
+    }
+
+
+def build_evidence_packet(
+    city: str,
+    service_intent: str,
+    label_text: str,
+    inspection_notes: str,
+    roof_system: str,
+    photo_count: str,
+    document_types: str,
+    reviewer_question: str,
+) -> Dict[str, object]:
+    labels = normalize_labels(label_text)
+    _, route_text = route_photo_labels(label_text, city, service_intent)
+    route_payload = json.loads(route_text)
+    warnings = privacy_scan(city, inspection_notes, document_types, reviewer_question)
+    city_clean = clean_text(city) or "service area"
+    intent_clean = clean_text(service_intent) or infer_service_intent(f"{inspection_notes} {reviewer_question}")
+    roof_system_clean = clean_text(roof_system) or "roof system not specified"
+    photo_count_clean = clean_text(photo_count) or "photo count not specified"
+    document_list = [clean_text(part, 120) for part in re.split(r"[,;\n]+", str(document_types or "")) if clean_text(part, 120)]
+
+    return {
+        "packet_type": "public_safe_insurance_documentation_packet",
+        "packet_version": "1.1.0",
+        "generated_date": date.today().isoformat(),
+        "organization": "Inspector Roofing and Restoration",
+        "city": city_clean,
+        "state": "GA" if city_clean.lower() != "service area" else "",
+        "service_intent": intent_clean,
+        "roof_system": roof_system_clean,
+        "photo_count_summary": photo_count_clean,
+        "document_types": document_list,
+        "sanitized_inspection_notes": clean_text(inspection_notes, 1600),
+        "reviewer_question": clean_text(reviewer_question, 600),
+        "labels": labels,
+        "route": route_payload,
+        "canonical_authority_hub": canonical_hub(city_clean, intent_clean),
+        "privacy_warnings": warnings,
+        "public_references": public_reference_block(),
+        "boundaries": evidence_boundary(),
+        "llm_ingest": {
+            "recommended_schema_types": ["Dataset", "TechArticle", "FAQPage", "Service", "LocalBusiness"],
+            "summary_task": "Convert sanitized roof-inspection labels and notes into a plain-English documentation summary without making coverage, causation, engineering, legal, or claim-approval conclusions.",
+            "safe_entity_links": [
+                PUBLIC_STUDY_URL,
+                ZENODO_DOI_URL,
+                HF_DATASET_URL,
+                KAGGLE_URL,
+                GITHUB_URL,
+            ],
+        },
+    }
+
+
+def deterministic_evidence_markdown(packet: Dict[str, object]) -> str:
+    warning_lines = packet["privacy_warnings"] or ["No obvious private identifiers detected by the basic scanner."]
+    labels = ", ".join(packet["labels"]) or "no labels entered"
+    docs = ", ".join(packet["document_types"]) or "no document types entered"
+    return "\n".join(
+        [
+            "# Public-Safe Evidence Packet",
+            "",
+            f"**City:** {packet['city']}",
+            f"**Service intent:** {packet['service_intent']}",
+            f"**Roof system:** {packet['roof_system']}",
+            f"**Photo count:** {packet['photo_count_summary']}",
+            f"**Labels:** {labels}",
+            f"**Documents:** {docs}",
+            "",
+            "## Documentation Summary",
+            clean_text(packet["sanitized_inspection_notes"], 1200) or "No notes entered.",
+            "",
+            "## Route",
+            f"**Theme:** {packet['route']['homeowner_theme']}",
+            f"**Safe concept:** {packet['route']['safe_gallery_concept']}",
+            f"**Authority hub:** {packet['canonical_authority_hub']}",
+            "",
+            "## Privacy Check",
+            *[f"- {line}" for line in warning_lines],
+            "",
+            "## Carrier-Safe Boundary",
+            "- This packet organizes observable documentation only.",
+            "- It does not determine coverage, causation, repairability, code compliance, engineering findings, or claim approval.",
+            "- Inspector Roofing is not acting as a public adjuster in this public-safe framework.",
+            "",
+            "## Source-Spine",
+            f"- Study page: {PUBLIC_STUDY_URL}",
+            f"- DOI: {ZENODO_DOI_URL}",
+            f"- Dataset: {HF_DATASET_URL}",
+        ]
+    )
+
+
+def call_openai_for_evidence(packet: Dict[str, object], model: str) -> str:
+    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    if not api_key:
+        return "OpenAI was not called because OPENAI_API_KEY is not set in the environment."
+
+    prompt = {
+        "instruction": (
+            "Write a concise carrier-safe roof documentation summary from this sanitized packet. "
+            "Do not decide coverage, causation, code compliance, repairability, engineering findings, "
+            "or claim approval. Do not imply public adjuster activity. Preserve the privacy warnings."
+        ),
+        "packet": packet,
+    }
+    body = {
+        "model": clean_text(model, 80) or os.environ.get("OPENAI_MODEL", "gpt-4.1-mini"),
+        "input": [
+            {
+                "role": "system",
+                "content": "You produce privacy-safe, insurance-documentation summaries for roof inspections. You never expose private data or make claim decisions.",
+            },
+            {"role": "user", "content": json.dumps(prompt, indent=2)},
+        ],
+        "max_output_tokens": 900,
+    }
+    request = urllib.request.Request(
+        "https://api.openai.com/v1/responses",
+        data=json.dumps(body).encode("utf-8"),
+        method="POST",
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=45) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")[:800]
+        return f"OpenAI request failed with HTTP {exc.code}: {detail}"
+    except Exception as exc:  # pragma: no cover - network failure path.
+        return f"OpenAI request failed: {exc}"
+
+    if payload.get("output_text"):
+        return clean_text(payload["output_text"], 4000)
+
+    chunks = []
+    for item in payload.get("output", []):
+        for content in item.get("content", []):
+            if content.get("type") in {"output_text", "text"} and content.get("text"):
+                chunks.append(content["text"])
+    return clean_text("\n".join(chunks), 4000) or "OpenAI returned no text output."
+
+
+def build_llm_feed_json(packet: Dict[str, object]) -> Dict[str, object]:
+    packet_id = f"{PUBLIC_STUDY_URL}#evidence-{slugify(packet['city'])}-{slugify(packet['service_intent'])}"
+    return {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Dataset",
+                "@id": f"{HF_DATASET_URL}#dataset",
+                "name": "Inspector Roofing AI Query Intelligence Public-Safe Dataset",
+                "url": HF_DATASET_URL,
+                "sameAs": [KAGGLE_URL, ZENODO_DOI_URL],
+                "license": "https://www.apache.org/licenses/LICENSE-2.0",
+            },
+            {
+                "@type": "TechArticle",
+                "@id": f"{PUBLIC_STUDY_URL}#study",
+                "headline": "A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education",
+                "url": PUBLIC_STUDY_URL,
+                "sameAs": [ZENODO_DOI_URL, GITHUB_URL, HF_DATASET_URL, KAGGLE_URL],
+            },
+            {
+                "@type": "DigitalDocument",
+                "@id": packet_id,
+                "name": f"Public-safe {packet['service_intent']} documentation packet for {packet['city']}",
+                "about": packet["route"]["homeowner_theme"],
+                "isBasedOn": [PUBLIC_STUDY_URL, ZENODO_DOI_URL, HF_DATASET_URL],
+                "keywords": packet["labels"],
+                "text": packet["sanitized_inspection_notes"],
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "insurance documentation reviewer",
+                },
+            },
+        ],
+    }
+
+
+def build_openapi_spec() -> Dict[str, object]:
+    return {
+        "openapi": "3.1.0",
+        "info": {
+            "title": "Inspector Roofing AI Query Intelligence Public-Safe API",
+            "version": "1.1.0",
+            "description": "Reference OpenAPI schema for public-safe query intelligence, proof routing, and insurance documentation packet generation.",
+        },
+        "servers": [{"url": PUBLIC_STUDY_URL, "description": "Public study and documentation hub"}],
+        "paths": {
+            "/query-intel": {"post": {"summary": "Map sanitized prompt/query lines to homeowner education themes."}},
+            "/proof-route": {"post": {"summary": "Route public-safe roof labels to proof-gallery concepts."}},
+            "/evidence-packet": {"post": {"summary": "Build a carrier-safe evidence packet from sanitized notes and labels."}},
+            "/llm-feed": {"post": {"summary": "Return JSON-LD source-spine feed for LLM ingestion."}},
+        },
+        "x-public-safety": evidence_boundary(),
+    }
+
+
+def build_insurance_packet_ui(
+    city: str,
+    service_intent: str,
+    label_text: str,
+    inspection_notes: str,
+    roof_system: str,
+    photo_count: str,
+    document_types: str,
+    reviewer_question: str,
+    use_openai: bool,
+    model: str,
+) -> Tuple[str, str, str, str]:
+    packet = build_evidence_packet(
+        city,
+        service_intent,
+        label_text,
+        inspection_notes,
+        roof_system,
+        photo_count,
+        document_types,
+        reviewer_question,
+    )
+    markdown = deterministic_evidence_markdown(packet)
+    if use_openai:
+        ai_text = call_openai_for_evidence(packet, model)
+        markdown = f"{markdown}\n\n## OpenAI Draft\n{ai_text}"
+    llm_feed = build_llm_feed_json(packet)
+    return (
+        markdown,
+        json.dumps(packet, indent=2),
+        json.dumps(llm_feed, indent=2),
+        json.dumps(build_openapi_spec(), indent=2),
+    )
 
 
 def build_demo():
     if gr is None:
         raise RuntimeError("gradio is not installed. Run `pip install -r requirements.txt` first.")
 
-    with gr.Blocks(title="Inspector Roofing Atlas Query Intelligence") as demo:
+    with gr.Blocks(title="Inspector Roofing AI Query Intelligence") as demo:
         gr.Markdown(
             """
-            # Inspector Roofing Atlas Query Intelligence
+            # Inspector Roofing AI Query Intelligence
 
-            Public-safe technical demo for mapping sanitized AI-query observations to homeowner education themes and privacy-safe proof-gallery concepts.
+            Public-safe technical demo for mapping sanitized AI-query observations, roof-photo labels, and inspection notes to homeowner education themes, insurance documentation packets, and LLM-ingestable source-spine records.
 
-            This app does **not** scrape AI tools, does **not** expose customer data, and does **not** publish proprietary scoring.
+            This app does **not** scrape AI tools, does **not** expose customer data, does **not** publish raw private photos, and does **not** make claim decisions.
             """
         )
         gr.Markdown(f"**Safety:** {PRIVATE_WARNING}")
@@ -308,11 +614,61 @@ def build_demo():
             route_json = gr.Code(label="Route JSON", language="json")
             route_button.click(route_photo_labels, inputs=[labels, city, service], outputs=[route_markdown, route_json])
 
+        with gr.Tab("Insurance Evidence Packet"):
+            gr.Markdown(
+                """
+                Build a public-safe insurance documentation packet from sanitized notes and labels. Keep customer names, exact addresses, claim numbers, contracts, receipts, faces, and license plates out of this public app.
+
+                Optional OpenAI drafting uses `OPENAI_API_KEY` from the Hugging Face Space secrets or local environment. If no key is set, the app still works in deterministic mode.
+                """
+            )
+            packet_city = gr.Textbox(label="City", value="Alpharetta")
+            packet_service = gr.Textbox(label="Service intent", value="insurance roof inspection")
+            packet_labels = gr.Textbox(label="Public-safe roof labels", value=DEFAULT_LABELS, lines=3)
+            packet_notes = gr.Textbox(label="Sanitized inspection notes", value=DEFAULT_EVIDENCE_NOTES, lines=7)
+            with gr.Row():
+                roof_system = gr.Textbox(label="Roof system", value="asphalt shingle roof")
+                photo_count = gr.Textbox(label="Photo count summary", value="42 roof-condition photos, privacy-screened")
+            document_types = gr.Textbox(
+                label="Document types included",
+                value="roof photos, slope notes, soft metal photos, repairability notes, public-safe summary",
+                lines=2,
+            )
+            reviewer_question = gr.Textbox(
+                label="Reviewer question",
+                value="What documentation is available to understand the observed roof conditions?",
+                lines=2,
+            )
+            with gr.Row():
+                use_openai = gr.Checkbox(label="Use OpenAI draft if OPENAI_API_KEY is set", value=False)
+                openai_model = gr.Textbox(label="OpenAI model", value=os.environ.get("OPENAI_MODEL", "gpt-4.1-mini"))
+            packet_button = gr.Button("Build Insurance Evidence Packet", variant="primary")
+            packet_markdown = gr.Markdown(label="Carrier-Safe Summary")
+            packet_json = gr.Code(label="Evidence Packet JSON", language="json")
+            llm_json = gr.Code(label="LLM Feed JSON-LD", language="json")
+            openapi_json = gr.Code(label="Reference OpenAPI Spec", language="json")
+            packet_button.click(
+                build_insurance_packet_ui,
+                inputs=[
+                    packet_city,
+                    packet_service,
+                    packet_labels,
+                    packet_notes,
+                    roof_system,
+                    photo_count,
+                    document_types,
+                    reviewer_question,
+                    use_openai,
+                    openai_model,
+                ],
+                outputs=[packet_markdown, packet_json, llm_json, openapi_json],
+            )
+
         gr.Markdown(
             """
             ## Public Boundary
 
-            The private 38k-image corpus stays private. Public releases should use aggregate counts, label taxonomy, sanitized examples, and documentation boundaries only.
+            The private 39k-image corpus stays private. Public releases should use aggregate counts, label taxonomy, sanitized examples, and documentation boundaries only.
             """
         )
 

@@ -37,7 +37,7 @@ dataset_info:
 
 **Author / Organization:** Richard Nasser, Inspector Roofing and Restoration, Alpharetta, Georgia  
 **Project type:** open-source research framework and technical demonstration  
-**Public release:** v1.0.1  
+**Public release:** v1.1.0
 **License:** Apache-2.0 for public templates, code, schemas, and documentation
 
 ## Abstract
@@ -46,7 +46,7 @@ Local service businesses increasingly need to communicate clearly to homeowners,
 
 The framework does **not** scrape private sessions, expose customer records, publish proprietary scoring, or claim ranking outcomes. Instead, it demonstrates how sanitized query observations can be grouped by city, service intent, homeowner question type, and privacy-safe proof concepts.
 
-The Inspector Roofing Atlas Query Intelligence System is positioned as a public research and education artifact that supports better local roofing communication. It includes sanitized templates, sample query-intel records, JSON schemas, photo-label taxonomy examples, and a working Gradio demo app. The production implementation, private customer data, exact page-routing rules, operational scoring, and private photo manifests remain proprietary.
+The Inspector Roofing Atlas Query Intelligence System is positioned as a public research and education artifact that supports better local roofing communication. It includes sanitized templates, sample query-intel records, JSON schemas, photo-label taxonomy examples, a working Gradio demo app, a public-safe insurance evidence packet builder, an LLM-feed JSON-LD export, and a reference OpenAPI schema. The production implementation, private customer data, exact page-routing rules, operational scoring, and private photo manifests remain proprietary.
 
 ## Plain-English Summary
 
@@ -63,9 +63,9 @@ Observing that gap can help a local business write clearer homeowner education p
 5. Connect query themes to privacy-safe proof-gallery concepts from roof-photo label categories.
 6. Keep all private implementation, scoring, customer records, full photo manifests, exact customer locations, and production routing rules out of the public release.
 
-## How the 38k Labeled Roof-Photo System Is Used Safely
+## How the 39k Labeled Roof-Photo System Is Used Safely
 
-Inspector Roofing maintains a private production corpus of approximately **38,000 labeled roof-inspection images**. That corpus is not included in this public repository.
+Inspector Roofing maintains a private production corpus of approximately **39,000 labeled roof-inspection images**. That corpus is not included in this public repository.
 
 This public project uses the photo system correctly by publishing only:
 
@@ -98,6 +98,7 @@ data/orcid_works.json                   ORCID structured work list
 data/public_project_inventory.csv       Project-wide GitHub/ORCID/Kaggle/OSF inventory
 schema/query_intelligence_record.schema.json
 schema/photo_label_record.schema.json
+schema/insurance_evidence_packet.schema.json
 docs/TECHNICAL_WHITEPAPER.md
 docs/INSPECTOR_ROOFING_RESEARCH_PAGE.md
 docs/ZENODO_ACADEMIA_ABSTRACT.md
@@ -105,6 +106,8 @@ docs/PUBLISHING_GUIDE.md
 docs/ORCID_UPDATE_NOTES.md
 docs/ALL_PROJECTS_PLATFORM_ROLLOUT.md
 exports/inspector-roofing-atlas-query-intelligence-study-page.html
+exports/insurance-llm-feed-template.json
+exports/openapi.json
 scripts/build_platform_uploads.py
 scripts/validate_release.py
 scripts/kaggle_publish.sh
@@ -170,10 +173,11 @@ For Inspector Roofing, this public framework supports:
 Repository, Hugging Face, DOI, OSF, Kaggle, ORCID, and Academia links should be added to `data/platform_links.csv` and `docs/PUBLICATION_LINK_MAP.md` after each platform is live.
 
 - GitHub repository: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
-- GitHub v1.0.1 release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1
+- GitHub v1.1.0 release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21011493
 
 ## Run the Demo
 
@@ -188,6 +192,17 @@ python app.py
 
 The local demo opens at `http://127.0.0.1:7860/` by default.
 
+## Working App Features
+
+- Query-intelligence mapper for sanitized homeowner prompts and observed AI-query language.
+- Proof-gallery router for public-safe roof-photo labels.
+- Insurance evidence packet builder for sanitized inspection notes, label bridges, document types, and reviewer questions.
+- LLM feed JSON-LD generator for crawler-friendly source-spine records.
+- Reference OpenAPI schema for future API deployment.
+- Optional OpenAI drafting when `OPENAI_API_KEY` is set in the Hugging Face Space secrets or local environment.
+
+The OpenAI feature is drafting support only. It must not be used to decide insurance coverage, causation, repairability, code compliance, engineering conclusions, legal conclusions, or claim approval.
+
 ## Suggested Citation
 
-Nasser, R. / Inspector Roofing and Restoration. *A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education*. Inspector Roofing and Restoration, Alpharetta, Georgia.
+Nasser, R. / Inspector Roofing and Restoration. *A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education*. Inspector Roofing and Restoration, Alpharetta, Georgia. https://doi.org/10.5281/zenodo.21011493

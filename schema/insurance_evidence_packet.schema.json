@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://inspector-roofing.com/atlas-query-intelligence-study/schema/insurance_evidence_packet.schema.json",
+  "title": "Inspector Roofing Public-Safe Insurance Documentation Packet",
+  "type": "object",
+  "required": [
+    "packet_type",
+    "packet_version",
+    "organization",
+    "city",
+    "service_intent",
+    "labels",
+    "sanitized_inspection_notes",
+    "public_references",
+    "boundaries"
+  ],
+  "properties": {
+    "packet_type": {
+      "const": "public_safe_insurance_documentation_packet"
+    },
+    "packet_version": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "service_intent": {
+      "type": "string"
+    },
+    "roof_system": {
+      "type": "string"
+    },
+    "photo_count_summary": {
+      "type": "string"
+    },
+    "document_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sanitized_inspection_notes": {
+      "type": "string"
+    },
+    "reviewer_question": {
+      "type": "string"
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "route": {
+      "type": "object"
+    },
+    "canonical_authority_hub": {
+      "type": "string",
+      "format": "uri"
+    },
+    "privacy_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "public_references": {
+      "type": "object"
+    },
+    "boundaries": {
+      "type": "object"
+    },
+    "llm_ingest": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -2,7 +2,7 @@
   "project": "Inspector Roofing Atlas Public Photo Corpus Summary",
   "version": "1.0.0",
   "private_production_corpus": {
-    "approximate_labeled_image_count": 38000,
+    "approximate_labeled_image_count": 39000,
     "status": "private production corpus, not included in this public repository",
     "reason_private": [
       "customer privacy",

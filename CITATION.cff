@@ -7,9 +7,10 @@ authors:
     given-names: Richard
     affiliation: Inspector Roofing and Restoration
     orcid: "https://orcid.org/0009-0000-2980-7543"
-version: 1.0.1
+version: 1.1.0
 date-released: "2026-06-28"
 license: Apache-2.0
+doi: 10.5281/zenodo.21011493
 abstract: "A privacy-first technical framework for mapping natural-language roofing intent to localized homeowner education themes and proof-gallery concepts without exposing private customer data or proprietary scoring."
 keywords:
   - Generative Engine Optimization
@@ -18,4 +19,4 @@ keywords:
   - Information Retrieval
   - Roof Inspection Documentation
   - Privacy-Preserving Data
-url: "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence"
+url: "https://doi.org/10.5281/zenodo.21011493"

@@ -5,10 +5,11 @@ GitHub and Hugging Face are live. The remaining platforms require either API tok
 ## Live Links
 
 - GitHub repo: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
-- GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1
+- GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21011493
 - ORCID: https://orcid.org/0009-0000-2980-7543
 - Inspector Roofing: https://inspector-roofing.com/
 - Amazon Author: https://www.amazon.com/author/richard-nasser
@@ -16,12 +17,20 @@ GitHub and Hugging Face are live. The remaining platforms require either API tok
 
 ## Files To Upload
 
-- Release zip: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1.zip`
-- Technical report PDF: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1/docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.0.1.pdf`
+- Release zip: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0.zip`
+- Technical report PDF: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0/docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.1.0.pdf`
 
 ## Zenodo DOI
 
-Option A - manual upload:
+Published:
+
+https://doi.org/10.5281/zenodo.21011493
+
+Published record:
+
+https://zenodo.org/doi/10.5281/zenodo.21011493
+
+Future version path:
 
 1. Open https://zenodo.org/uploads/new
 2. Upload the release zip and technical report PDF.
@@ -36,7 +45,7 @@ Option B - API:
 2. Run:
 
 ```bash
-cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1
+cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0
 ZENODO_ACCESS_TOKEN="paste-token-here" ZENODO_PUBLISH=1 python3 scripts/zenodo_publish.py
 ```
 
@@ -50,7 +59,7 @@ To publish a later version:
 
 ```bash
 python3 -m pip install --user kaggle
-cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1
+cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0
 KAGGLE_MODE=version bash scripts/kaggle_publish.sh
 ```
 
@@ -63,6 +72,10 @@ KAGGLE_MODE=create bash scripts/kaggle_publish.sh
 
 ## OSF
 
+Status:
+
+https://osf.io/pqvwf/ was created, but OSF immediately flagged it for platform spam review before files could be uploaded. Do not create duplicate OSF projects. Restore this project through OSF support or the OSF account interface first, then upload the public-safe files.
+
 Manual path:
 
 1. Open https://osf.io/dashboard
@@ -74,7 +87,7 @@ Manual path:
 CLI path after project creation:
 
 ```bash
-cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.0.1
+cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0
 OSF_PROJECT_ID="paste-project-id" bash scripts/osf_publish.sh
 ```
 
@@ -96,11 +109,15 @@ API path requires an ORCID OAuth token with activity/work update permission. Do 
 1. Open https://www.academia.edu/
 2. Upload the technical report PDF.
 3. Use `docs/ACADEMIA_UPLOAD_NOTES.md`.
-4. Add DOI after Zenodo is live.
+4. Include the DOI: https://doi.org/10.5281/zenodo.21011493.
 
 ## Website Update
 
-After Zenodo DOI is live, add the final source-spine links to a public Inspector Roofing authority/research page:
+Published website research page:
+
+https://inspector-roofing.com/atlas-query-intelligence-study/
+
+The page should keep these source-spine links current:
 
 - GitHub repo
 - GitHub release

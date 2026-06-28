@@ -27,7 +27,7 @@ fi
 chmod 600 "$HOME/.kaggle/kaggle.json"
 
 MODE="${KAGGLE_MODE:-auto}"
-MESSAGE="${KAGGLE_MESSAGE:-v1.0.1 public-safe source-spine update}"
+MESSAGE="${KAGGLE_MESSAGE:-v1.1.0 public-safe source-spine update}"
 UPLOAD_DIR="$(python3 scripts/build_platform_uploads.py)"
 
 case "$MODE" in

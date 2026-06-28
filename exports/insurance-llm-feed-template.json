@@ -1,0 +1,49 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dataset",
+      "@id": "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence#dataset",
+      "name": "Inspector Roofing AI Query Intelligence Public-Safe Dataset",
+      "url": "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence",
+      "sameAs": [
+        "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence",
+        "https://doi.org/10.5281/zenodo.21011493"
+      ],
+      "license": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://inspector-roofing.com/atlas-query-intelligence-study/#study",
+      "headline": "A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education",
+      "url": "https://inspector-roofing.com/atlas-query-intelligence-study/",
+      "sameAs": [
+        "https://doi.org/10.5281/zenodo.21011493",
+        "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence",
+        "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence",
+        "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence"
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://inspector-roofing.com/atlas-query-intelligence-study/#sample-insurance-documentation-packet",
+      "name": "Public-safe insurance roof documentation packet template",
+      "about": "Insurance documentation questions",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "insurance documentation reviewer"
+      },
+      "isBasedOn": [
+        "https://inspector-roofing.com/atlas-query-intelligence-study/",
+        "https://doi.org/10.5281/zenodo.21011493"
+      ],
+      "keywords": [
+        "hail_hit",
+        "wind_crease",
+        "soft_metal_impact",
+        "missing_shingle",
+        "privacy-safe roof documentation"
+      ]
+    }
+  ]
+}

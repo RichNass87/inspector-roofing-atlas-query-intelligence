@@ -18,7 +18,7 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "docs" / "inspector-roofing-atlas-query-intelligence-technical-report-v1.0.1.pdf"
+OUTPUT = ROOT / "docs" / "inspector-roofing-atlas-query-intelligence-technical-report-v1.1.0.pdf"
 
 
 TITLE = "A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education"
@@ -41,8 +41,8 @@ SECTIONS = [
         "The demonstration method uses sanitized homeowner prompts, observed AI-search query language, broad city and service intent, homeowner education themes, structural H2 templates, FAQ examples, schema themes, and privacy-safe proof-gallery concepts. Production scoring, exact routing rules, private photo manifests, customer files, and claim records remain outside the public release.",
     ),
     (
-        "Public-Safe Use of the 38k Labeled Roof-Photo System",
-        "Inspector Roofing maintains a private production corpus of approximately 38,000 labeled roof-inspection images. The public project uses that system correctly by publishing only aggregate corpus metadata, a public label taxonomy, privacy-safe proof concepts, schema definitions, sanitized sample records, and demo routing logic. Raw customer images, faces, license plates, exact addresses, private claim files, receipts, contracts, and full photo manifests are intentionally excluded.",
+        "Public-Safe Use of the 39k Labeled Roof-Photo System",
+        "Inspector Roofing maintains a private production corpus of approximately 39,000 labeled roof-inspection images. The public project uses that system correctly by publishing only aggregate corpus metadata, a public label taxonomy, privacy-safe proof concepts, schema definitions, sanitized sample records, demo routing logic, and a public-safe insurance evidence packet builder. Raw customer images, faces, license plates, exact addresses, private claim files, receipts, contracts, and full photo manifests are intentionally excluded.",
     ),
     (
         "Practical Use",

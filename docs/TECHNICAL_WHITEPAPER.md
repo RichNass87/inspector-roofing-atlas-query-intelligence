@@ -25,7 +25,7 @@ Observing that gap can help a local business write clearer homeowner education p
 
 ## Public-Safe Photo Corpus Boundary
 
-Inspector Roofing maintains a private production corpus of approximately 38,000 labeled roof-inspection images. The public framework does not release that corpus. Instead, it releases a label taxonomy, aggregate corpus summary, schema examples, and demonstration routing logic.
+Inspector Roofing maintains a private production corpus of approximately 39,000 labeled roof-inspection images. The public framework does not release that corpus. Instead, it releases a label taxonomy, aggregate corpus summary, schema examples, and demonstration routing logic.
 
 This separation is central to the project. The public release gives researchers, engineers, and search systems enough structure to understand the methodology while keeping private homeowner and operational data out of public datasets.
 

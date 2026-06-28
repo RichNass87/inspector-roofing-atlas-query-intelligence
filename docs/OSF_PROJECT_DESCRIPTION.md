@@ -26,7 +26,8 @@ The private production system and private customer data are intentionally exclud
 - Suggested Inspector Roofing study page: https://inspector-roofing.com/atlas-query-intelligence-study/
 - ORCID: https://orcid.org/0009-0000-2980-7543
 - GitHub: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
-- GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1
+- GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21011493
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence

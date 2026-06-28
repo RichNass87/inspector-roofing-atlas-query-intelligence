@@ -23,13 +23,13 @@ This inventory keeps the public source-spine projects coordinated across GitHub,
 - ORCID should list scholarly/report/software/dataset works, not every tiny operational file.
 - Kaggle should be used for sanitized datasets only, not private images, claim data, customer details, or plugin internals.
 - OSF should mirror the public-safe report, release zip, schemas, and public metadata.
-- Zenodo should be the DOI anchor for stable release archives and reports.
+- Zenodo is the DOI anchor for stable release archives and reports: https://doi.org/10.5281/zenodo.21011493.
 - Hugging Face should carry runnable demos and dataset cards.
 
 ## Next Project-Wide Cleanup Order
 
 1. Keep the current Atlas Query Intelligence Kaggle mirror versioned at https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence.
-2. Create or select the matching OSF project, then run `OSF_PROJECT_ID="..." bash scripts/osf_publish.sh`.
+2. Restore OSF project https://osf.io/pqvwf/ from platform review, then run `OSF_PROJECT_ID="pqvwf" bash scripts/osf_publish.sh` or upload manually.
 3. Import `data/orcid_works.bib` into ORCID for the current Atlas Query Intelligence package.
 4. Review `data/public_project_inventory.csv` and decide which remaining projects deserve Kaggle/OSF mirrors versus ORCID-only work entries.
 5. Add final Kaggle, OSF, ORCID, Zenodo DOI, and Academia URLs back into `data/platform_links.csv`, `docs/PUBLICATION_LINK_MAP.md`, README, GitHub release notes, and Hugging Face.
