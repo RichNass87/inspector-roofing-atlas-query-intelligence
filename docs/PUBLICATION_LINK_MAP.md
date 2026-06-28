@@ -5,6 +5,7 @@ Use this file as the source-spine checklist after each platform is published.
 ## Canonical Project
 
 - Primary business website: https://inspector-roofing.com/
+- Suggested public study page: https://inspector-roofing.com/atlas-query-intelligence-study/
 - Local demo when running on this Mac: http://127.0.0.1:7860/
 - Suggested GitHub repository: `inspector-roofing-atlas-query-intelligence`
 - Suggested Hugging Face dataset: `InspectorRoofing/inspector-roofing-atlas-query-intelligence`
@@ -14,6 +15,7 @@ Use this file as the source-spine checklist after each platform is published.
 
 | Platform | Purpose | Status | Final URL |
 | --- | --- | --- | --- |
+| Inspector Roofing Study Page | Website authority hub for the public-safe study and source-spine links | Ready to publish | https://inspector-roofing.com/atlas-query-intelligence-study/ |
 | GitHub | Source code, schemas, dataset samples, validation | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence |
 | GitHub Release | Versioned v1.0.1 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1 |
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Live | https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence |
@@ -31,6 +33,7 @@ Project-wide cleanup inventory: `data/public_project_inventory.csv`.
 ## Link Rules
 
 - GitHub should link to Hugging Face Dataset, Hugging Face Space, Zenodo DOI, Inspector Roofing, and Amazon only after those URLs are live.
+- The Inspector Roofing study page should link to the public dataset, demo, GitHub release, ORCID profile, Amazon references, and final DOI/mirror URLs as they go live.
 - Hugging Face Dataset should link back to GitHub, Zenodo DOI, and Inspector Roofing.
 - Hugging Face Space should link to the Dataset and GitHub.
 - Zenodo should cite the GitHub release archive and include the technical-report PDF.

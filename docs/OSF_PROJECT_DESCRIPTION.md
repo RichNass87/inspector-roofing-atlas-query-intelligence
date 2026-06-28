@@ -23,6 +23,7 @@ The private production system and private customer data are intentionally exclud
 ## Primary Links
 
 - Inspector Roofing: https://inspector-roofing.com/
+- Suggested Inspector Roofing study page: https://inspector-roofing.com/atlas-query-intelligence-study/
 - ORCID: https://orcid.org/0009-0000-2980-7543
 - GitHub: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
 - GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.0.1

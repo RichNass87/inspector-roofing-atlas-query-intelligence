@@ -21,6 +21,7 @@ PUBLIC_FILES = [
 PUBLIC_DIRS = [
     "data",
     "docs",
+    "exports",
     "schema",
     "scripts",
     "tests",

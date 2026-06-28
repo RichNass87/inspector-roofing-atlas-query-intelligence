@@ -99,10 +99,12 @@ data/public_project_inventory.csv       Project-wide GitHub/ORCID/Kaggle/OSF inv
 schema/query_intelligence_record.schema.json
 schema/photo_label_record.schema.json
 docs/TECHNICAL_WHITEPAPER.md
+docs/INSPECTOR_ROOFING_RESEARCH_PAGE.md
 docs/ZENODO_ACADEMIA_ABSTRACT.md
 docs/PUBLISHING_GUIDE.md
 docs/ORCID_UPDATE_NOTES.md
 docs/ALL_PROJECTS_PLATFORM_ROLLOUT.md
+exports/inspector-roofing-atlas-query-intelligence-study-page.html
 scripts/build_platform_uploads.py
 scripts/validate_release.py
 scripts/kaggle_publish.sh
@@ -160,6 +162,7 @@ For Inspector Roofing, this public framework supports:
 ## Related Public Links
 
 - Inspector Roofing: https://inspector-roofing.com/
+- Suggested Inspector Roofing study page: https://inspector-roofing.com/atlas-query-intelligence-study/
 - Richard Nasser ORCID: https://orcid.org/0009-0000-2980-7543
 - Richard Nasser Amazon author profile: https://www.amazon.com/author/richard-nasser
 - Related Amazon book reference: https://www.amazon.com/dp/B0H63DV2LR
