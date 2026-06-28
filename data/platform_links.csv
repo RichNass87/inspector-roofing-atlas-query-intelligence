@@ -3,8 +3,8 @@ Inspector Roofing,Primary website,live,https://inspector-roofing.com/,Primary bu
 Amazon Author,Author profile,live,https://www.amazon.com/author/richard-nasser,Richard Nasser author profile
 Amazon Book,Related book reference,live,https://www.amazon.com/dp/B0H63DV2LR,Related source-spine book reference already used in public Inspector Roofing dataset context
 GitHub,Source repository,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence,Public source repository
-Hugging Face Dataset,Dataset card and public-safe records,pending,https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence,Create or update after Hugging Face authorization
-Hugging Face Space,Gradio demo,pending,https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo,Create or update after Hugging Face authorization
+Hugging Face Dataset,Dataset card and public-safe records,live,https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence,Public dataset card and sanitized source-spine records
+Hugging Face Space,Gradio demo,live,https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo,Public Gradio demo
 Zenodo,DOI and archived technical report,pending,,Add DOI after Zenodo record is created
 OSF,Research mirror,pending,,Optional mirror after DOI and GitHub are live
 Kaggle,Dataset mirror,pending,,Optional mirror for sanitized dataset files

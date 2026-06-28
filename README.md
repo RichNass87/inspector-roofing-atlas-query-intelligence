@@ -156,6 +156,10 @@ For Inspector Roofing, this public framework supports:
 
 Repository, Hugging Face, DOI, OSF, Kaggle, and Academia links should be added to `data/platform_links.csv` and `docs/PUBLICATION_LINK_MAP.md` after each platform is live.
 
+- GitHub repository: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
+- Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
+- Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
+
 ## Run the Demo
 
 Use Python 3.12 when possible. Python 3.14 may be too new for parts of the current Gradio dependency stack.
