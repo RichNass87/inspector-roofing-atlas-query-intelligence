@@ -31,7 +31,8 @@ Inspector Roofing Protocols™ is referenced as a pending USPTO trademark applic
 - ORCID: https://orcid.org/0009-0000-2980-7543
 - GitHub: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
 - GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1
-- Zenodo DOI: https://doi.org/10.5281/zenodo.21011493
+- Zenodo concept DOI: https://doi.org/10.5281/zenodo.21011493
+- Zenodo v1.1.1 DOI: https://doi.org/10.5281/zenodo.21013082
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence

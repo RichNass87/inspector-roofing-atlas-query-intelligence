@@ -10,7 +10,8 @@ GitHub,Source repository,live,https://github.com/RichNass87/inspector-roofing-at
 GitHub Release,Versioned archive and PDF,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1,Stable release target for DOI/archive workflows
 Hugging Face Dataset,Dataset card and public-safe records,live,https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence,Public dataset card and sanitized source-spine records
 Hugging Face Space,Gradio demo,live,https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo,Public Gradio demo
-Zenodo,DOI and archived technical report,live,https://doi.org/10.5281/zenodo.21011493,Published Zenodo DOI record with release ZIP and technical report PDF
+Zenodo Concept DOI,Stable DOI across versions,live,https://doi.org/10.5281/zenodo.21011493,Stable concept DOI for the Atlas Query Intelligence source-spine
+Zenodo v1.1.1 DOI,Versioned DOI and archived technical report,live,https://doi.org/10.5281/zenodo.21013082,Published Zenodo v1.1.1 record with release ZIP and technical report PDF
 OSF,Research mirror,needs_platform_review,https://osf.io/pqvwf/,Created but OSF flagged the project for spam review before files could be uploaded; contact OSF support or restore manually before using as a public mirror
 Kaggle,Dataset mirror,live,https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence,Sanitized dataset mirror for public-safe files
 Academia.edu,Technical report mirror,pending,,Upload PDF after DOI exists

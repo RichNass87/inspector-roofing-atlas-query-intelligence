@@ -191,7 +191,8 @@ Repository, Hugging Face, DOI, OSF, Kaggle, ORCID, and Academia links should be 
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
-- Zenodo DOI: https://doi.org/10.5281/zenodo.21011493
+- Zenodo concept DOI: https://doi.org/10.5281/zenodo.21011493
+- Zenodo v1.1.1 DOI: https://doi.org/10.5281/zenodo.21013082
 
 ## Run the Demo
 

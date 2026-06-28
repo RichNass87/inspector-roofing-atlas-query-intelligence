@@ -9,7 +9,8 @@ GitHub and Hugging Face are live. The remaining platforms require either API tok
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
-- Zenodo DOI: https://doi.org/10.5281/zenodo.21011493
+- Zenodo concept DOI: https://doi.org/10.5281/zenodo.21011493
+- Zenodo v1.1.1 DOI: https://doi.org/10.5281/zenodo.21013082
 - ORCID: https://orcid.org/0009-0000-2980-7543
 - Inspector Roofing: https://inspector-roofing.com/
 - Amazon Author: https://www.amazon.com/author/richard-nasser
@@ -26,9 +27,13 @@ Published:
 
 https://doi.org/10.5281/zenodo.21011493
 
+Latest v1.1.1 version:
+
+https://doi.org/10.5281/zenodo.21013082
+
 Published record:
 
-https://zenodo.org/doi/10.5281/zenodo.21011493
+https://zenodo.org/records/21013082
 
 Future version path:
 
