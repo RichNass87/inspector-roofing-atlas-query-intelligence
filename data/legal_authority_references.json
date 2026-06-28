@@ -1,0 +1,22 @@
+{
+  "organization": "Inspector Roofing and Restoration",
+  "public_ip_page": "https://inspector-roofing.com/ip/",
+  "references": [
+    {
+      "name": "Inspector Roofing Protocols\u2122",
+      "type": "USPTO trademark application",
+      "status": "pending",
+      "serial_number": "99910245",
+      "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "scope_note": "Referenced as a pending USPTO application and public documentation protocol. This public record should not be described as a registered trademark unless USPTO status later changes."
+    },
+    {
+      "name": "Inspector Roofing Atlas Query Intelligence",
+      "type": "technical report and dataset source spine",
+      "status": "published",
+      "doi": "10.5281/zenodo.21011493",
+      "verification_url": "https://doi.org/10.5281/zenodo.21011493",
+      "scope_note": "Concept DOI for the public-safe technical report, release archives, and dataset documentation."
+    }
+  ]
+}

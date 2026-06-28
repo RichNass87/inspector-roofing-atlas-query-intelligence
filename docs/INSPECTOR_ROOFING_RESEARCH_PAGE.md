@@ -48,11 +48,18 @@ This page should be the public website anchor for the AI Query Intelligence sour
 
   <iframe src="https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo/+?embed=true" width="100%" height="760" style="border:1px solid #d7e6f7;border-radius:8px;background:#fff;" loading="lazy"></iframe>
 
+  <h2>Legal And Framework Reference</h2>
+  <p>Inspector Roofing Protocols™ is referenced as a pending USPTO trademark application, Serial No. 99910245. The framework is used here as a public documentation reference for inspection-first roof evidence, privacy-safe proof organization, and homeowner education. It should not be described as a registered trademark unless the USPTO status later changes.</p>
+  <p><a href="https://inspector-roofing.com/ip/">Open the Inspector Roofing legal and intellectual property reference page</a></p>
+  <p><a href="https://tsdr.uspto.gov/#caseNumber=99910245&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">Verify Serial No. 99910245 in USPTO TSDR</a></p>
+
   <h2>Public Research Links</h2>
   <ul>
     <li><a href="https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence">GitHub source repository</a></li>
-    <li><a href="https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0">GitHub v1.1.0 release archive and technical PDF</a></li>
+    <li><a href="https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1">GitHub v1.1.1 release archive and technical PDF</a></li>
     <li><a href="https://doi.org/10.5281/zenodo.21011493">Zenodo DOI record</a></li>
+    <li><a href="https://inspector-roofing.com/ip/">Legal and intellectual property references</a></li>
+    <li><a href="https://tsdr.uspto.gov/#caseNumber=99910245&amp;caseSearchType=US_APPLICATION&amp;caseType=DEFAULT&amp;searchType=statusSearch">USPTO TSDR Serial No. 99910245</a></li>
     <li><a href="https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence">Hugging Face public-safe dataset</a></li>
     <li><a href="https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo">Hugging Face Gradio demo app</a></li>
     <li><a href="https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence">Kaggle public-safe dataset mirror</a></li>
@@ -107,16 +114,18 @@ This page should be the public website anchor for the AI Query Intelligence sour
       "author": {"@id": "https://orcid.org/0009-0000-2980-7543"},
       "publisher": {"@id": "https://inspector-roofing.com/#organization"},
       "datePublished": "2026-06-28",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "license": "https://www.apache.org/licenses/LICENSE-2.0",
       "isBasedOn": [
         "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence",
         "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence"
       ],
       "sameAs": [
-        "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0",
+        "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1",
         "https://doi.org/10.5281/zenodo.21011493",
         "https://zenodo.org/doi/10.5281/zenodo.21011493",
+        "https://inspector-roofing.com/ip/",
+        "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
         "https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo",
         "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence",
         "https://orcid.org/0009-0000-2980-7543",
@@ -132,6 +141,14 @@ This page should be the public website anchor for the AI Query Intelligence sour
         "AI Visibility",
         "Privacy-Preserving Data"
       ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://inspector-roofing.com/ip/#inspector-roofing-protocols",
+      "name": "Inspector Roofing Protocols™",
+      "termCode": "USPTO Serial No. 99910245",
+      "url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "description": "Pending USPTO trademark application reference for Inspector Roofing's public documentation protocol framework."
     },
     {
       "@type": "SoftwareApplication",

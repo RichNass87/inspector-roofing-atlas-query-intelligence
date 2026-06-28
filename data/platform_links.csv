@@ -1,11 +1,13 @@
 platform,role,status,url,notes
 Inspector Roofing,Primary website,live,https://inspector-roofing.com/,Primary business and public entity website
 Inspector Roofing Study Page,Website research hub,ready_to_publish,https://inspector-roofing.com/atlas-query-intelligence-study/,Public website page for the Atlas Query Intelligence study and source-spine links
+Inspector Roofing IP Page,Legal and research verification hub,ready_to_publish,https://inspector-roofing.com/ip/,Public legal/source-spine page for DOI records and Inspector Roofing Protocols pending USPTO application
+USPTO TSDR,Pending trademark application verification,live,https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch,Inspector Roofing Protocols pending USPTO application Serial No. 99910245
 ORCID,Researcher identifier,live,https://orcid.org/0009-0000-2980-7543,Richard Nasser ORCID profile for project work entries
 Amazon Author,Author profile,live,https://www.amazon.com/author/richard-nasser,Richard Nasser author profile
 Amazon Book,Related book reference,live,https://www.amazon.com/dp/B0H63DV2LR,Related source-spine book reference already used in public Inspector Roofing dataset context
 GitHub,Source repository,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence,Public source repository
-GitHub Release,Versioned archive and PDF,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0,Stable release target for DOI/archive workflows
+GitHub Release,Versioned archive and PDF,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1,Stable release target for DOI/archive workflows
 Hugging Face Dataset,Dataset card and public-safe records,live,https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence,Public dataset card and sanitized source-spine records
 Hugging Face Space,Gradio demo,live,https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo,Public Gradio demo
 Zenodo,DOI and archived technical report,live,https://doi.org/10.5281/zenodo.21011493,Published Zenodo DOI record with release ZIP and technical report PDF

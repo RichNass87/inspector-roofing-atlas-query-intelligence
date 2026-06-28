@@ -10,7 +10,7 @@ This technical report describes a privacy-first framework for mapping sanitized 
 
 ## Recommended Upload File
 
-`docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.1.0.pdf`
+`docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.1.1.pdf`
 
 ## Keywords
 

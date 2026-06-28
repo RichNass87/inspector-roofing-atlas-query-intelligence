@@ -6,6 +6,8 @@ Use this file as the source-spine checklist after each platform is published.
 
 - Primary business website: https://inspector-roofing.com/
 - Suggested public study page: https://inspector-roofing.com/atlas-query-intelligence-study/
+- Suggested public IP page: https://inspector-roofing.com/ip/
+- USPTO TSDR record for Inspector Roofing Protocols™ Serial No. 99910245: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 - Local demo when running on this Mac: http://127.0.0.1:7860/
 - Suggested GitHub repository: `inspector-roofing-atlas-query-intelligence`
 - Suggested Hugging Face dataset: `InspectorRoofing/inspector-roofing-atlas-query-intelligence`
@@ -16,8 +18,10 @@ Use this file as the source-spine checklist after each platform is published.
 | Platform | Purpose | Status | Final URL |
 | --- | --- | --- | --- |
 | Inspector Roofing Study Page | Website authority hub for the public-safe study and source-spine links | Ready to publish | https://inspector-roofing.com/atlas-query-intelligence-study/ |
+| Inspector Roofing IP Page | Legal and research verification hub | Ready to publish | https://inspector-roofing.com/ip/ |
+| USPTO TSDR | Pending trademark application verification for Inspector Roofing Protocols™ Serial No. 99910245 | Live | https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch |
 | GitHub | Source code, schemas, dataset samples, validation | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence |
-| GitHub Release | Versioned v1.1.0 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0 |
+| GitHub Release | Versioned v1.1.1 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1 |
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Live | https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence |
 | Hugging Face Space | Gradio public demo | Live | https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo |
 | ORCID | Richard Nasser researcher identifier and works list | Ready for work import | https://orcid.org/0009-0000-2980-7543 |
@@ -34,6 +38,7 @@ Project-wide cleanup inventory: `data/public_project_inventory.csv`.
 
 - GitHub should link to Hugging Face Dataset, Hugging Face Space, Zenodo DOI, Inspector Roofing, and Amazon only after those URLs are live.
 - The Inspector Roofing study page should link to the public dataset, demo, GitHub release, ORCID profile, Amazon references, and final DOI/mirror URLs as they go live.
+- The Inspector Roofing IP page should link to the USPTO TSDR record, Zenodo DOI, GitHub, Hugging Face, Kaggle, ORCID, and Amazon references.
 - Hugging Face Dataset should link back to GitHub, Zenodo DOI, and Inspector Roofing.
 - Hugging Face Space should link to the Dataset and GitHub.
 - Zenodo should cite the GitHub release archive and include the technical-report PDF.

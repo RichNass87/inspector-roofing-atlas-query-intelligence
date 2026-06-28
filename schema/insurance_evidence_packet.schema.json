@@ -12,6 +12,7 @@
     "labels",
     "sanitized_inspection_notes",
     "public_references",
+    "governance",
     "boundaries"
   ],
   "properties": {
@@ -72,6 +73,37 @@
     },
     "public_references": {
       "type": "object"
+    },
+    "governance": {
+      "type": "object",
+      "required": [
+        "name",
+        "status",
+        "serial_number",
+        "verification_url"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "serial_number": {
+          "type": "string"
+        },
+        "verification_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "public_ip_page": {
+          "type": "string",
+          "format": "uri"
+        },
+        "scope_note": {
+          "type": "string"
+        }
+      }
     },
     "boundaries": {
       "type": "object"

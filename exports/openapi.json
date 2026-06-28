@@ -2,8 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Inspector Roofing AI Query Intelligence Public-Safe API",
-    "version": "1.1.0",
-    "description": "Reference OpenAPI schema for public-safe query intelligence, proof routing, insurance documentation packet generation, and LLM feed output."
+    "version": "1.1.1",
+    "description": "Reference OpenAPI schema for public-safe query intelligence, proof routing, and insurance documentation packet generation."
   },
   "servers": [
     {
@@ -11,6 +11,14 @@
       "description": "Public study and documentation hub"
     }
   ],
+  "x-legal-authority": {
+    "name": "Inspector Roofing Protocols\u2122",
+    "status": "USPTO trademark application pending",
+    "serial_number": "99910245",
+    "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+    "public_ip_page": "https://inspector-roofing.com/ip/",
+    "scope_note": "Referenced as a pending USPTO application and public documentation standard. This is not a claim that registration has issued."
+  },
   "paths": {
     "/query-intel": {
       "post": {
@@ -39,7 +47,44 @@
     "not_engineering_opinion": true,
     "not_causation_determination": true,
     "not_claim_approval": true,
-    "raw_customer_images_included": 0,
-    "private_image_corpus_status": "approximately 39000 labeled roof-inspection images remain private"
+    "private_corpus_boundary": {
+      "approximate_labeled_image_count": 39000,
+      "status": "private production corpus, not included in this public repository",
+      "reason_private": [
+        "customer privacy",
+        "exact property location privacy",
+        "faces and license plate avoidance",
+        "claim-file and contract separation",
+        "proprietary operational workflow protection"
+      ]
+    },
+    "public_release_boundary": {
+      "raw_customer_images_included": 0,
+      "full_photo_manifest_included": false,
+      "public_sample_strategy": "publish taxonomy, schemas, aggregate proof concepts, and sanitized example records only",
+      "safe_for_github_huggingface_zenodo": true
+    },
+    "allowed_use": [
+      "documentation completeness review",
+      "homeowner education",
+      "inspection summary drafting",
+      "privacy-safe evidence routing",
+      "structured data ingestion"
+    ],
+    "excluded_use": [
+      "insurance coverage determination",
+      "claim approval",
+      "engineering conclusion",
+      "legal advice",
+      "public release of customer records or raw private images"
+    ],
+    "governance_reference": {
+      "name": "Inspector Roofing Protocols\u2122",
+      "status": "USPTO trademark application pending",
+      "serial_number": "99910245",
+      "verification_url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "public_ip_page": "https://inspector-roofing.com/ip/",
+      "scope_note": "Referenced as a pending USPTO application and public documentation standard. This is not a claim that registration has issued."
+    }
   }
 }

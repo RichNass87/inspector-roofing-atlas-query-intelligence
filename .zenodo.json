@@ -8,7 +8,7 @@
       "affiliation": "Inspector Roofing and Restoration"
     }
   ],
-  "description": "This framework establishes a privacy-first methodology for mapping natural language intent to localized, structured web nodes without compromising user privacy or operational data. The public release includes sanitized query-intelligence records, JSON schemas, roof-photo label taxonomy examples, aggregate proof-gallery routing concepts, a Gradio demonstration app, a public-safe insurance evidence packet builder, an LLM-feed JSON-LD export, and a reference OpenAPI schema.",
+  "description": "This framework establishes a privacy-first methodology for mapping natural language intent to localized, structured web nodes without compromising user privacy or operational data. The public release includes sanitized query-intelligence records, JSON schemas, roof-photo label taxonomy examples, aggregate proof-gallery routing concepts, a Gradio demonstration app, a public-safe insurance evidence packet builder, an LLM-feed JSON-LD export, a reference OpenAPI schema, and a public legal-authority reference for Inspector Roofing Protocols\u2122 as a pending USPTO trademark application, Serial No. 99910245.",
   "keywords": [
     "Generative Engine Optimization",
     "Local Search Architecture",
@@ -16,7 +16,9 @@
     "Information Retrieval",
     "Roof Inspection Documentation",
     "AI Visibility",
-    "Privacy-Preserving Data"
+    "Privacy-Preserving Data",
+    "Trademark Application",
+    "USPTO Serial No. 99910245"
   ],
   "related_identifiers": [
     {
@@ -43,9 +45,19 @@
       "identifier": "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence",
       "relation": "isSupplementedBy",
       "scheme": "url"
+    },
+    {
+      "identifier": "https://inspector-roofing.com/ip/",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "relation": "references",
+      "scheme": "url"
     }
   ],
   "license": "Apache-2.0",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "access_right": "open"
 }

@@ -18,7 +18,7 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "docs" / "inspector-roofing-atlas-query-intelligence-technical-report-v1.1.0.pdf"
+OUTPUT = ROOT / "docs" / "inspector-roofing-atlas-query-intelligence-technical-report-v1.1.1.pdf"
 
 
 TITLE = "A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education"
@@ -43,6 +43,10 @@ SECTIONS = [
     (
         "Public-Safe Use of the 39k Labeled Roof-Photo System",
         "Inspector Roofing maintains a private production corpus of approximately 39,000 labeled roof-inspection images. The public project uses that system correctly by publishing only aggregate corpus metadata, a public label taxonomy, privacy-safe proof concepts, schema definitions, sanitized sample records, demo routing logic, and a public-safe insurance evidence packet builder. Raw customer images, faces, license plates, exact addresses, private claim files, receipts, contracts, and full photo manifests are intentionally excluded.",
+    ),
+    (
+        "Legal And Framework Verification",
+        "Inspector Roofing Protocols\u2122 is referenced as a pending USPTO trademark application, Serial No. 99910245. The public TSDR verification record is https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch. This report uses that record as a public verification reference for the documentation framework and does not describe the mark as registered unless the USPTO status later changes.",
     ),
     (
         "Practical Use",

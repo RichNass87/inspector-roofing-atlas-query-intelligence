@@ -37,7 +37,7 @@ dataset_info:
 
 **Author / Organization:** Richard Nasser, Inspector Roofing and Restoration, Alpharetta, Georgia  
 **Project type:** open-source research framework and technical demonstration  
-**Public release:** v1.1.0
+**Public release:** v1.1.1
 **License:** Apache-2.0 for public templates, code, schemas, and documentation
 
 ## Abstract
@@ -78,6 +78,14 @@ This public project uses the photo system correctly by publishing only:
 
 The public demo does **not** publish exact customer addresses, faces, license plates, private claims files, receipts, contracts, full photo manifests, private folder paths, or operational scoring rules.
 
+## Legal And Public Authority References
+
+Inspector Roofing Protocols™ is referenced as a pending USPTO trademark application, **Serial No. 99910245**. The public verification link is:
+
+https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
+
+This public source-spine describes the mark as a pending application only. It should not be described as a registered trademark unless the USPTO status later changes.
+
 ## Repository Layout
 
 ```text
@@ -96,16 +104,20 @@ data/platform_links.csv                 Public source-spine platform links
 data/orcid_works.bib                    ORCID BibTeX import for current works
 data/orcid_works.json                   ORCID structured work list
 data/public_project_inventory.csv       Project-wide GitHub/ORCID/Kaggle/OSF inventory
+data/legal_authority_references.json     Public legal/source-spine authority references
 schema/query_intelligence_record.schema.json
 schema/photo_label_record.schema.json
 schema/insurance_evidence_packet.schema.json
+schema/legal_authority_reference.schema.json
 docs/TECHNICAL_WHITEPAPER.md
 docs/INSPECTOR_ROOFING_RESEARCH_PAGE.md
+docs/INSPECTOR_ROOFING_IP_PAGE.md
 docs/ZENODO_ACADEMIA_ABSTRACT.md
 docs/PUBLISHING_GUIDE.md
 docs/ORCID_UPDATE_NOTES.md
 docs/ALL_PROJECTS_PLATFORM_ROLLOUT.md
 exports/inspector-roofing-atlas-query-intelligence-study-page.html
+exports/inspector-roofing-legal-ip-page.html
 exports/insurance-llm-feed-template.json
 exports/openapi.json
 scripts/build_platform_uploads.py
@@ -166,6 +178,8 @@ For Inspector Roofing, this public framework supports:
 
 - Inspector Roofing: https://inspector-roofing.com/
 - Suggested Inspector Roofing study page: https://inspector-roofing.com/atlas-query-intelligence-study/
+- Suggested Inspector Roofing IP page: https://inspector-roofing.com/ip/
+- USPTO TSDR record for Inspector Roofing Protocols™ Serial No. 99910245: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 - Richard Nasser ORCID: https://orcid.org/0009-0000-2980-7543
 - Richard Nasser Amazon author profile: https://www.amazon.com/author/richard-nasser
 - Related Amazon book reference: https://www.amazon.com/dp/B0H63DV2LR
@@ -173,7 +187,7 @@ For Inspector Roofing, this public framework supports:
 Repository, Hugging Face, DOI, OSF, Kaggle, ORCID, and Academia links should be added to `data/platform_links.csv` and `docs/PUBLICATION_LINK_MAP.md` after each platform is live.
 
 - GitHub repository: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
-- GitHub v1.1.0 release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0
+- GitHub v1.1.1 release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence

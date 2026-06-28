@@ -15,8 +15,8 @@ ZENODO_API = os.environ.get("ZENODO_API", "https://zenodo.org/api")
 TOKEN = os.environ.get("ZENODO_ACCESS_TOKEN")
 
 FILES = [
-    ROOT / "docs" / "inspector-roofing-atlas-query-intelligence-technical-report-v1.1.0.pdf",
-    ROOT.parent / "inspector-roofing-atlas-source-spine-v1.1.0.zip",
+    ROOT / "docs" / "inspector-roofing-atlas-query-intelligence-technical-report-v1.1.1.pdf",
+    ROOT.parent / "inspector-roofing-atlas-source-spine-v1.1.1.zip",
 ]
 
 

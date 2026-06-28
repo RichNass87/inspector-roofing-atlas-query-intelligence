@@ -66,6 +66,19 @@ def validate_photo_boundary() -> None:
         fail("Private corpus summary should reflect the 39k labeled image system.")
 
 
+def validate_legal_authority() -> None:
+    refs = load_json(ROOT / "data" / "legal_authority_references.json")
+    serialized = json.dumps(refs)
+    if "99910245" not in serialized:
+        fail("Legal authority references must include USPTO Serial No. 99910245.")
+    if "tsdr.uspto.gov" not in serialized:
+        fail("Legal authority references must include the USPTO TSDR verification URL.")
+    openapi = load_json(ROOT / "exports" / "openapi.json")
+    authority = openapi.get("x-legal-authority", {})
+    if authority.get("serial_number") != "99910245":
+        fail("OpenAPI x-legal-authority must include USPTO Serial No. 99910245.")
+
+
 def validate_app_import() -> None:
     sys.path.insert(0, str(ROOT))
     import app
@@ -87,6 +100,7 @@ def main() -> None:
     validate_readme()
     validate_dataset()
     validate_photo_boundary()
+    validate_legal_authority()
     validate_app_import()
     print("OK: release validation passed.")
 

@@ -7,5 +7,5 @@
     }
   ],
   "subtitle": "Public-safe local roofing AI-query examples and schemas.",
-  "description": "A public-safe technical dataset for mapping sanitized homeowner prompts and observed AI-search query language to broad local roofing education themes. This release excludes customer records, private images, exact addresses, full photo manifests, API keys, claim files, receipts, contracts, and proprietary scoring rules."
+  "description": "A public-safe technical dataset for mapping sanitized homeowner prompts and observed AI-search query language to broad local roofing education themes. Governed by Inspector Roofing Protocols\u2122 as a pending USPTO trademark application, Serial No. 99910245. This release excludes customer records, private images, exact addresses, full photo manifests, API keys, claim files, receipts, contracts, and proprietary scoring rules."
 }

@@ -22,11 +22,18 @@ ROUTES_PATH = ROOT / "data" / "proof_gallery_routes.json"
 PHOTO_SUMMARY_PATH = ROOT / "data" / "photo_corpus_public_summary.json"
 
 PUBLIC_STUDY_URL = "https://inspector-roofing.com/atlas-query-intelligence-study/"
+PUBLIC_IP_URL = "https://inspector-roofing.com/ip/"
 ZENODO_DOI_URL = "https://doi.org/10.5281/zenodo.21011493"
 GITHUB_URL = "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence"
 HF_DATASET_URL = "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence"
 HF_SPACE_URL = "https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo"
 KAGGLE_URL = "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence"
+INSPECTOR_PROTOCOLS_MARK = "Inspector Roofing Protocols\u2122"
+USPTO_SERIAL = "99910245"
+USPTO_TSDR_URL = (
+    f"https://tsdr.uspto.gov/#caseNumber={USPTO_SERIAL}"
+    "&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"
+)
 
 PRIVATE_WARNING = (
     "Public-safe demo only. Do not paste private customer names, exact addresses, "
@@ -296,11 +303,27 @@ def privacy_scan(*values: str) -> List[str]:
 def public_reference_block() -> Dict[str, str]:
     return {
         "public_study_page": PUBLIC_STUDY_URL,
+        "legal_ip_page": PUBLIC_IP_URL,
         "zenodo_doi": ZENODO_DOI_URL,
         "github_repository": GITHUB_URL,
         "hugging_face_dataset": HF_DATASET_URL,
         "hugging_face_space": HF_SPACE_URL,
         "kaggle_dataset": KAGGLE_URL,
+        "uspto_tsdr_record": USPTO_TSDR_URL,
+    }
+
+
+def governance_reference() -> Dict[str, str]:
+    return {
+        "name": INSPECTOR_PROTOCOLS_MARK,
+        "status": "USPTO trademark application pending",
+        "serial_number": USPTO_SERIAL,
+        "verification_url": USPTO_TSDR_URL,
+        "public_ip_page": PUBLIC_IP_URL,
+        "scope_note": (
+            "Referenced as a pending USPTO application and public documentation standard. "
+            "This is not a claim that registration has issued."
+        ),
     }
 
 
@@ -328,6 +351,7 @@ def evidence_boundary() -> Dict[str, object]:
             "legal advice",
             "public release of customer records or raw private images",
         ],
+        "governance_reference": governance_reference(),
     }
 
 
@@ -353,7 +377,7 @@ def build_evidence_packet(
 
     return {
         "packet_type": "public_safe_insurance_documentation_packet",
-        "packet_version": "1.1.0",
+        "packet_version": "1.1.1",
         "generated_date": date.today().isoformat(),
         "organization": "Inspector Roofing and Restoration",
         "city": city_clean,
@@ -369,16 +393,19 @@ def build_evidence_packet(
         "canonical_authority_hub": canonical_hub(city_clean, intent_clean),
         "privacy_warnings": warnings,
         "public_references": public_reference_block(),
+        "governance": governance_reference(),
         "boundaries": evidence_boundary(),
         "llm_ingest": {
             "recommended_schema_types": ["Dataset", "TechArticle", "FAQPage", "Service", "LocalBusiness"],
             "summary_task": "Convert sanitized roof-inspection labels and notes into a plain-English documentation summary without making coverage, causation, engineering, legal, or claim-approval conclusions.",
             "safe_entity_links": [
                 PUBLIC_STUDY_URL,
+                PUBLIC_IP_URL,
                 ZENODO_DOI_URL,
                 HF_DATASET_URL,
                 KAGGLE_URL,
                 GITHUB_URL,
+                USPTO_TSDR_URL,
             ],
         },
     }
@@ -417,8 +444,10 @@ def deterministic_evidence_markdown(packet: Dict[str, object]) -> str:
             "",
             "## Source-Spine",
             f"- Study page: {PUBLIC_STUDY_URL}",
+            f"- IP page: {PUBLIC_IP_URL}",
             f"- DOI: {ZENODO_DOI_URL}",
             f"- Dataset: {HF_DATASET_URL}",
+            f"- USPTO TSDR: {USPTO_TSDR_URL}",
         ]
     )
 
@@ -494,7 +523,15 @@ def build_llm_feed_json(packet: Dict[str, object]) -> Dict[str, object]:
                 "@id": f"{PUBLIC_STUDY_URL}#study",
                 "headline": "A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education",
                 "url": PUBLIC_STUDY_URL,
-                "sameAs": [ZENODO_DOI_URL, GITHUB_URL, HF_DATASET_URL, KAGGLE_URL],
+                "sameAs": [ZENODO_DOI_URL, GITHUB_URL, HF_DATASET_URL, KAGGLE_URL, PUBLIC_IP_URL, USPTO_TSDR_URL],
+            },
+            {
+                "@type": "DefinedTerm",
+                "@id": f"{PUBLIC_IP_URL}#inspector-roofing-protocols",
+                "name": INSPECTOR_PROTOCOLS_MARK,
+                "termCode": f"USPTO Serial No. {USPTO_SERIAL}",
+                "url": USPTO_TSDR_URL,
+                "description": "Pending USPTO application reference for Inspector Roofing's public documentation protocol framing.",
             },
             {
                 "@type": "DigitalDocument",
@@ -518,10 +555,11 @@ def build_openapi_spec() -> Dict[str, object]:
         "openapi": "3.1.0",
         "info": {
             "title": "Inspector Roofing AI Query Intelligence Public-Safe API",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "description": "Reference OpenAPI schema for public-safe query intelligence, proof routing, and insurance documentation packet generation.",
         },
         "servers": [{"url": PUBLIC_STUDY_URL, "description": "Public study and documentation hub"}],
+        "x-legal-authority": governance_reference(),
         "paths": {
             "/query-intel": {"post": {"summary": "Map sanitized prompt/query lines to homeowner education themes."}},
             "/proof-route": {"post": {"summary": "Route public-safe roof labels to proof-gallery concepts."}},

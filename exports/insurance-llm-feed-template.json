@@ -21,29 +21,40 @@
         "https://doi.org/10.5281/zenodo.21011493",
         "https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence",
         "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence",
-        "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence"
+        "https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence",
+        "https://inspector-roofing.com/ip/",
+        "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch"
       ]
     },
     {
+      "@type": "DefinedTerm",
+      "@id": "https://inspector-roofing.com/ip/#inspector-roofing-protocols",
+      "name": "Inspector Roofing Protocols\u2122",
+      "termCode": "USPTO Serial No. 99910245",
+      "url": "https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch",
+      "description": "Pending USPTO application reference for Inspector Roofing's public documentation protocol framing."
+    },
+    {
       "@type": "DigitalDocument",
-      "@id": "https://inspector-roofing.com/atlas-query-intelligence-study/#sample-insurance-documentation-packet",
-      "name": "Public-safe insurance roof documentation packet template",
+      "@id": "https://inspector-roofing.com/atlas-query-intelligence-study/#evidence-alpharetta-insurance-roof-inspection",
+      "name": "Public-safe insurance roof inspection documentation packet for Alpharetta",
       "about": "Insurance documentation questions",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "insurance documentation reviewer"
-      },
       "isBasedOn": [
         "https://inspector-roofing.com/atlas-query-intelligence-study/",
-        "https://doi.org/10.5281/zenodo.21011493"
+        "https://doi.org/10.5281/zenodo.21011493",
+        "https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence"
       ],
       "keywords": [
         "hail_hit",
-        "wind_crease",
-        "soft_metal_impact",
         "missing_shingle",
-        "privacy-safe roof documentation"
-      ]
+        "soft_metal_impact",
+        "wind_crease"
+      ],
+      "text": "Observed lifted tabs on wind-facing slopes. Soft metal marks were documented separately from shingles. Several missing or displaced shingles were photographed. No customer name, exact address, claim number, contract, receipt, face, or license plate is included.",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "insurance documentation reviewer"
+      }
     }
   ]
 }

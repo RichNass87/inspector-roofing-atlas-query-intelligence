@@ -5,7 +5,7 @@ GitHub and Hugging Face are live. The remaining platforms require either API tok
 ## Live Links
 
 - GitHub repo: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
-- GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.0
+- GitHub release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
 - Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
@@ -17,8 +17,8 @@ GitHub and Hugging Face are live. The remaining platforms require either API tok
 
 ## Files To Upload
 
-- Release zip: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0.zip`
-- Technical report PDF: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0/docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.1.0.pdf`
+- Release zip: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.1.zip`
+- Technical report PDF: `/Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.1/docs/inspector-roofing-atlas-query-intelligence-technical-report-v1.1.1.pdf`
 
 ## Zenodo DOI
 
@@ -45,7 +45,7 @@ Option B - API:
 2. Run:
 
 ```bash
-cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0
+cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.1
 ZENODO_ACCESS_TOKEN="paste-token-here" ZENODO_PUBLISH=1 python3 scripts/zenodo_publish.py
 ```
 
@@ -59,7 +59,7 @@ To publish a later version:
 
 ```bash
 python3 -m pip install --user kaggle
-cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0
+cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.1
 KAGGLE_MODE=version bash scripts/kaggle_publish.sh
 ```
 
@@ -87,7 +87,7 @@ Manual path:
 CLI path after project creation:
 
 ```bash
-cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.0
+cd /Users/richardnasser/Documents/inspector-roofing-atlas-source-spine-v1.1.1
 OSF_PROJECT_ID="paste-project-id" bash scripts/osf_publish.sh
 ```
 
