@@ -78,6 +78,29 @@ This public project uses the photo system correctly by publishing only:
 
 The public demo does **not** publish exact customer addresses, faces, license plates, private claims files, receipts, contracts, full photo manifests, private folder paths, or operational scoring rules.
 
+## Why Atlas Is The Flagship Technical Asset
+
+Among the Inspector Roofing public source-spine projects, Atlas Query Intelligence is the most technically complex research asset because it connects three normally separate layers: natural-language roofing questions, labeled roof-photo concepts, and machine-readable routing schemas.
+
+The text-first repositories are useful for retrieval, citation, and entity reinforcement. They provide clean Markdown, JSON, and DOI-backed records that an answer engine can read. Atlas goes further. It demonstrates how physical roofing evidence can be represented as public-safe labels, mapped to homeowner intent, routed to proof-gallery concepts, and explained through structured outputs without exposing private customer data.
+
+### Technical Differentiators
+
+- **Vision-language alignment:** Atlas shows how a label such as `hail_hit`, `wind_crease`, `soft_metal_impact`, or `missing_shingle` can connect to homeowner questions about trust, inspection quality, storm documentation, and claim verifiability.
+- **Functional routing logic:** The Gradio demo is not a static archive. It maps sanitized prompts to observed query language, converts roof-label concepts into proof-gallery routes, and assembles public-safe evidence packet examples.
+- **Core schema layer:** The repository includes JSON schemas, photo-label taxonomy, proof-gallery routes, an OpenAPI reference, and LLM-feed examples that make the framework understandable to both developers and crawlers.
+- **Privacy boundary by design:** The public system explains the method while keeping raw inspection photos, customer records, exact addresses, claim documents, and operational scoring out of the release.
+
+### Compared With The Other Public Assets
+
+| Repository | Primary function | Core AI utility | Innovation level |
+| --- | --- | --- | --- |
+| Atlas Query Intelligence | Photo routing, schema definition, and vision-language intent mapping | Object detection concepts, feature extraction, classification, routing logic | High |
+| AI Visibility Library | RAG-ready text chunking of books, manuscripts, and research notes | Text retrieval and answer-engine optimization | Moderate |
+| Roofing Search Integrity / Google Study | Whitepaper publication, DOI linking, local search integrity, and entity verification | Question answering, citation support, entity corroboration | Moderate |
+
+This is the piece that moves the framework from "organized text for AI" toward "teaching AI how to interpret roofing evidence safely." It does not claim to automate insurance decisions. It demonstrates how inspection-first roofing data can be translated into transparent, privacy-safe educational structures.
+
 ## Legal And Public Authority References
 
 This public source-spine references the following marks as pending USPTO applications only:
