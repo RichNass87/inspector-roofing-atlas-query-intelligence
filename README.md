@@ -203,6 +203,10 @@ Repository, Hugging Face, DOI, OSF, Kaggle, ORCID, and Academia links should be 
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
 - Zenodo concept DOI: https://doi.org/10.5281/zenodo.21011493
 - Zenodo v1.1.1 DOI: https://doi.org/10.5281/zenodo.21013082
+- Roofing Search Integrity Report GitHub: https://github.com/RichNass87/inspector-roofing-search-integrity-report
+- Roofing Search Integrity Report Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/roofing-search-integrity-report
+- Roofing Search Integrity Report Hugging Face Demo: https://huggingface.co/spaces/InspectorRoofing/roofing-search-integrity-demo
+- Roofing Search Integrity Report Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/roofing-search-integrity-report
 
 ## Run the Demo
 
