@@ -3,6 +3,8 @@ import io
 import json
 import os
 import re
+import subprocess
+import sys
 import urllib.error
 import urllib.request
 from collections import Counter
@@ -665,8 +667,10 @@ def build_insurance_packet_ui(
 
 
 def build_demo():
+    global gr
     if gr is None:
-        raise RuntimeError("gradio is not installed. Run `pip install -r requirements.txt` first.")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "gradio==4.44.1"])
+        import gradio as gr
 
     with gr.Blocks(title="Inspector Roofing AI Query Intelligence") as demo:
         gr.Markdown(
@@ -773,4 +777,4 @@ def build_demo():
 
 
 if __name__ == "__main__":
-    build_demo().launch()
+    build_demo().launch(server_name="0.0.0.0", server_port=7860)
