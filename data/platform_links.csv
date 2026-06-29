@@ -1,6 +1,6 @@
 platform,role,status,url,notes
 Inspector Roofing,Primary website,live,https://inspector-roofing.com/,Primary business and public entity website
-Inspector Roofing Study Page,Website research hub,ready_to_publish,https://inspector-roofing.com/atlas-query-intelligence-study/,Public website page for the Atlas Query Intelligence study and source-spine links
+Inspector Roofing Study Page,Website research hub,live,https://inspector-roofing.com/atlas-query-intelligence/,Public website page for the Atlas Query Intelligence study and source-spine links
 Inspector Roofing IP Page,Legal and research verification hub,prepared_only,https://inspector-roofing.com/ip/,Public legal/source-spine page copy prepared but not published by user request; use docs/INSPECTOR_ROOFING_IP_PAGE.md only unless publishing is explicitly requested
 USPTO TSDR,Pending trademark application verification,live,https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch,Inspector Roofing Protocols pending USPTO application Serial No. 99910245
 USPTO TSDR,Pending trademark/service mark application verification,live,https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch,Claim Verifiability pending USPTO application Serial No. 99910275
@@ -11,7 +11,8 @@ Amazon Book,Related book reference,live,https://www.amazon.com/dp/B0H63DV2LR,Rel
 GitHub,Source repository,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence,Public source repository
 GitHub Release,Versioned archive and PDF,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1,Stable release target for DOI/archive workflows
 Hugging Face Dataset,Dataset card and public-safe records,live,https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence,Public dataset card and sanitized source-spine records
-Hugging Face Space,Gradio demo,live,https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo,Public Gradio demo
+Hugging Face Space,Gradio demo,live,https://huggingface.co/spaces/InspectorRoofing/atlas-query-demo,Public Gradio demo
+Hugging Face Space Legacy Alias,Original long Gradio demo URL,live,https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo,Original long public Gradio demo URL
 Zenodo Concept DOI,Stable DOI across versions,live,https://doi.org/10.5281/zenodo.21011493,Stable concept DOI for the Atlas Query Intelligence source-spine
 Zenodo v1.1.1 DOI,Versioned DOI and archived technical report,live,https://doi.org/10.5281/zenodo.21013082,Published Zenodo v1.1.1 record with release ZIP and technical report PDF
 OSF,Research mirror,needs_platform_review,https://osf.io/pqvwf/,Created but OSF flagged the project for spam review before files could be uploaded; contact OSF support or restore manually before using as a public mirror

@@ -27,7 +27,8 @@ Use this file as the source-spine checklist after each platform is published.
 | GitHub | Source code, schemas, dataset samples, validation | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence |
 | GitHub Release | Versioned v1.1.1 archive and PDF assets | Live | https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1 |
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Live | https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence |
-| Hugging Face Space | Gradio public demo | Live | https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo |
+| Hugging Face Space | Gradio public demo | Live | https://huggingface.co/spaces/InspectorRoofing/atlas-query-demo |
+| Hugging Face Space Legacy Alias | Original long Space URL | Live | https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo |
 | ORCID | Richard Nasser researcher identifier and works list | Live, v1.1.1 DOI work added | https://orcid.org/0009-0000-2980-7543 |
 | Zenodo Concept DOI | Stable DOI across versions | Live | https://doi.org/10.5281/zenodo.21011493 |
 | Zenodo v1.1.1 DOI | Versioned DOI for current technical report / release archive | Live | https://doi.org/10.5281/zenodo.21013082 |

@@ -185,7 +185,7 @@ For Inspector Roofing, this public framework supports:
 ## Related Public Links
 
 - Inspector Roofing: https://inspector-roofing.com/
-- Suggested Inspector Roofing study page: https://inspector-roofing.com/atlas-query-intelligence-study/
+- Inspector Roofing Atlas page: https://inspector-roofing.com/atlas-query-intelligence/
 - Suggested Inspector Roofing IP page: https://inspector-roofing.com/ip/
 - USPTO TSDR record for Inspector Roofing Protocols™ Serial No. 99910245: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 - USPTO TSDR record for Claim Verifiability™ Serial No. 99910275: https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
@@ -199,7 +199,8 @@ Repository, Hugging Face, DOI, OSF, Kaggle, ORCID, and Academia links should be 
 - GitHub repository: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence
 - GitHub v1.1.1 release: https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1
 - Hugging Face Dataset: https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence
-- Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
+- Hugging Face Space: https://huggingface.co/spaces/InspectorRoofing/atlas-query-demo
+- Legacy Hugging Face Space alias: https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo
 - Kaggle Dataset: https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence
 - Zenodo concept DOI: https://doi.org/10.5281/zenodo.21011493
 - Zenodo v1.1.1 DOI: https://doi.org/10.5281/zenodo.21013082
