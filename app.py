@@ -669,7 +669,7 @@ def build_insurance_packet_ui(
 def build_demo():
     global gr
     if gr is None:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "gradio==4.44.1", "huggingface_hub<1.0", "audioop-lts>=0.2.1"])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "gradio==6.19.0"])
         import gradio as gr
 
     with gr.Blocks(title="Inspector Roofing AI Query Intelligence") as demo:
