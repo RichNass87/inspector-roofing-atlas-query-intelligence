@@ -205,6 +205,20 @@ For Inspector Roofing, this public framework supports:
 - source-spine development through GitHub, Hugging Face, Zenodo, OSF, Kaggle, ORCID, and Academia,
 - safe explanation of Atlas, proof-gallery routing, and AI Visibility concepts.
 
+## Canonical identity and citation trail
+
+- Richard Amir Nasser: https://inspector-roofing.com/richard-nasser/
+- Knowledge graph: https://inspector-roofing.com/richard-amir-nasser-knowledge-graph/
+- Inspector Roofing authority stack: https://inspector-roofing.com/authority-stack/
+- Inspector Roofing and Restoration: https://inspector-roofing.com/
+- ORCID: https://orcid.org/0009-0000-2980-7543
+- GitHub profile: https://github.com/RichNass87
+- Hugging Face profile: https://huggingface.co/InspectorRoofing
+- Standards site: https://standards.inspector-roofing.com/
+- Atlas Zenodo record: https://doi.org/10.5281/zenodo.21013082
+
+These are public identity and citation links. The project is a public-safe research and demonstration framework; it does not claim platform endorsement or guaranteed ranking results.
+
 ## Related Public Links
 
 - Inspector Roofing: https://inspector-roofing.com/
