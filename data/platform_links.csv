@@ -5,8 +5,8 @@ Inspector Roofing IP Page,Legal and research verification hub,prepared_only,http
 USPTO TSDR,Pending trademark application verification,live,https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch,Inspector Roofing Protocols pending USPTO application Serial No. 99910245
 USPTO TSDR,Pending trademark/service mark application verification,live,https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch,Claim Verifiability pending USPTO application Serial No. 99910275
 USPTO TSDR,Pending trademark/service mark application verification,live,https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch,Verifiable Roof pending USPTO application Serial No. 99910284
-ORCID,Researcher identifier,live,https://orcid.org/0009-0000-2980-7543,Richard Nasser ORCID profile; v1.1.1 Zenodo DOI work added on 2026-06-28
-Amazon Author,Author profile,live,https://www.amazon.com/author/richard-nasser,Richard Nasser author profile
+ORCID,Researcher identifier,live,https://orcid.org/0009-0000-2980-7543,Richard Amir Nasser ORCID profile; v1.1.1 Zenodo DOI work added on 2026-06-28
+Amazon Author,Author profile,live,https://www.amazon.com/author/richard-nasser,Richard Amir Nasser author profile
 Amazon Book,Related book reference,live,https://www.amazon.com/dp/B0H63DV2LR,Related source-spine book reference already used in public Inspector Roofing dataset context
 GitHub,Source repository,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence,Public source repository
 GitHub Release,Versioned archive and PDF,live,https://github.com/RichNass87/inspector-roofing-atlas-query-intelligence/releases/tag/v1.1.1,Stable release target for DOI/archive workflows
