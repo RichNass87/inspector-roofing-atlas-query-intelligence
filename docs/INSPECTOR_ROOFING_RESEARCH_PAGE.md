@@ -67,8 +67,8 @@ This page should be the public website anchor for the AI Query Intelligence sour
     <li><a href="https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence">Hugging Face public-safe dataset</a></li>
     <li><a href="https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo">Hugging Face Gradio demo app</a></li>
     <li><a href="https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence">Kaggle public-safe dataset mirror</a></li>
-    <li><a href="https://orcid.org/0009-0000-2980-7543">Richard Nasser ORCID profile</a></li>
-    <li><a href="https://www.amazon.com/author/richard-nasser">Richard Nasser Amazon author profile</a></li>
+    <li><a href="https://orcid.org/0009-0000-2980-7543">Richard Amir Nasser ORCID profile</a></li>
+    <li><a href="https://www.amazon.com/author/richard-nasser">Richard Amir Nasser Amazon author profile</a></li>
     <li><a href="https://www.amazon.com/dp/B0H63DV2LR">Related Amazon book reference</a></li>
   </ul>
 
@@ -211,7 +211,7 @@ This page should be the public website anchor for the AI Query Intelligence sour
     {
       "@type": "Person",
       "@id": "https://orcid.org/0009-0000-2980-7543",
-      "name": "Richard Nasser",
+      "name": "Richard Amir Nasser",
       "url": "https://orcid.org/0009-0000-2980-7543",
       "affiliation": {"@id": "https://inspector-roofing.com/#organization"}
     }
