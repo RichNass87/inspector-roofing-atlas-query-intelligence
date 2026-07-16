@@ -35,7 +35,9 @@ dataset_info:
 
 # A Public-Safe Demonstration Framework for Local Roofing AI Query Intelligence, Proof-Gallery Routing, and Homeowner Education
 
-**Author / Organization:** Richard Nasser, Inspector Roofing and Restoration, Alpharetta, Georgia  
+![Atlas Query Intelligence by Richard Amir Nasser](https://inspector-roofing.com/wp-content/uploads/2026/07/atlas-query-intelligence-richard-amir-nasser.png)
+
+**Author / Organization:** Richard Amir Nasser, Inspector Roofing and Restoration, Alpharetta, Georgia  
 **Project type:** open-source research framework and technical demonstration  
 **Public release:** v1.1.1
 **License:** Apache-2.0 for public templates, code, schemas, and documentation
@@ -227,8 +229,8 @@ These are public identity and citation links. The project is a public-safe resea
 - USPTO TSDR record for Inspector Roofing Protocols™ Serial No. 99910245: https://tsdr.uspto.gov/#caseNumber=99910245&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 - USPTO TSDR record for Claim Verifiability™ Serial No. 99910275: https://tsdr.uspto.gov/#caseNumber=99910275&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
 - USPTO TSDR record for Verifiable Roof™ Serial No. 99910284: https://tsdr.uspto.gov/#caseNumber=99910284&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch
-- Richard Nasser ORCID: https://orcid.org/0009-0000-2980-7543
-- Richard Nasser Amazon author profile: https://www.amazon.com/author/richard-nasser
+- Richard Amir Nasser ORCID: https://orcid.org/0009-0000-2980-7543
+- Richard Amir Nasser Amazon author profile: https://www.amazon.com/author/richard-nasser
 - Related Amazon book reference: https://www.amazon.com/dp/B0H63DV2LR
 
 Repository, Hugging Face, DOI, OSF, Kaggle, ORCID, and Academia links should be added to `data/platform_links.csv` and `docs/PUBLICATION_LINK_MAP.md` after each platform is live.
