@@ -29,13 +29,13 @@ Use this file as the source-spine checklist after each platform is published.
 | Hugging Face Dataset | Dataset card, sanitized query-intel records, public taxonomy | Live | https://huggingface.co/datasets/InspectorRoofing/inspector-roofing-atlas-query-intelligence |
 | Hugging Face Space | Gradio public demo | Live | https://huggingface.co/spaces/InspectorRoofing/atlas-query-demo |
 | Hugging Face Space Legacy Alias | Original long Space URL | Live | https://huggingface.co/spaces/InspectorRoofing/inspector-roofing-atlas-query-intelligence-demo |
-| ORCID | Richard Nasser researcher identifier and works list | Live, v1.1.1 DOI work added | https://orcid.org/0009-0000-2980-7543 |
+| ORCID | Richard Amir Nasser researcher identifier and works list | Live, v1.1.1 DOI work added | https://orcid.org/0009-0000-2980-7543 |
 | Zenodo Concept DOI | Stable DOI across versions | Live | https://doi.org/10.5281/zenodo.21011493 |
 | Zenodo v1.1.1 DOI | Versioned DOI for current technical report / release archive | Live | https://doi.org/10.5281/zenodo.21013082 |
 | OSF | Research project mirror and citation context | Needs OSF review | https://osf.io/pqvwf/ |
 | Kaggle | Public-safe dataset mirror | Live | https://www.kaggle.com/datasets/inspectorroofing/inspector-roofing-atlas-query-intelligence |
 | Academia.edu | Technical-report PDF and abstract | Blocked by account review |  |
-| Amazon Author | Richard Nasser author profile | Live public reference | https://www.amazon.com/author/richard-nasser |
+| Amazon Author | Richard Amir Nasser author profile | Live public reference | https://www.amazon.com/author/richard-nasser |
 | Amazon Book | Related source-spine book reference | Live public reference | https://www.amazon.com/dp/B0H63DV2LR |
 
 Project-wide cleanup inventory: `data/public_project_inventory.csv`.
